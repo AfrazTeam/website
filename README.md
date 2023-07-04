@@ -1,4 +1,4 @@
-First, run the development server:
+First, run the development server: 
 
 ```bash
 pnpm install
