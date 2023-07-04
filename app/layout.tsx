@@ -1,7 +1,5 @@
 import './globals.css'
-import { Inter } from 'next/font/google'
-
-const inter = Inter({ subsets: ['latin'] })
+import { inter, yekanBakh } from '@/app/fonts'
 
 export const metadata = {
   title: 'افراز تیم | Afraz Team',
@@ -15,7 +13,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="fa">
-      <body className={inter.className}>{children}</body>
+      <body className={`${yekanBakh.variable} ${inter.variable}`}>
+        {children}
+      </body>
     </html>
   )
 }
