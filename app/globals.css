@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+     .header-main{
+          @apply flex justify-between mx-14 mt-10 items-center
+     }
+     .header-name{
+          @apply font-bold text-2xl 
+     }
+     .header-menu{
+          @apply flex
+     }
+     .header-menu-item{
+          @apply px-5 
+     }
+}
