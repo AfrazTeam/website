@@ -1,4 +1,4 @@
-interface headerData {
+interface iHeaderData {
   name: string
   mainPage: string
   projects: string
@@ -8,7 +8,7 @@ interface headerData {
   Counseling: string
 }
 
-let header_data: headerData = {
+let header_data: iHeaderData = {
   name: 'افراز تیم',
   mainPage: 'صفحه اصلی',
   projects: 'پروژه ها',

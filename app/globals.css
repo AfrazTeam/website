@@ -4,15 +4,15 @@
 
 @layer utilities {
      .header-main{
-          @apply flex justify-between mx-14 mt-10 items-center
+          @apply flex justify-between mx-14 mt-7 items-center
      }
      .header-name{
-          @apply font-bold text-3xl 
+          @apply font-extrabold text-3xl 
      }
      .header-menu{
           @apply flex
      }
      .header-menu-item{
-          @apply px-5 font-light
+          @apply px-6 font-normal
      }
 }
