@@ -8,7 +8,7 @@ interface iHeaderData {
   Counseling: string
 }
 
-let header_data: iHeaderData = {
+let desctop_menu_data: iHeaderData = {
   name: 'افراز تیم',
   mainPage: 'صفحه اصلی',
   projects: 'پروژه ها',
@@ -18,4 +18,4 @@ let header_data: iHeaderData = {
   Counseling: 'مشاوره رایگان',
 }
 
-export { header_data }
+export { desctop_menu_data }
