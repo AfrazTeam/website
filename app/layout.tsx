@@ -13,7 +13,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="fa">
-      <body className={`${yekanBakh.variable} ${inter.variable}`}>
+      <body className={`${yekanBakh.className} ${inter.variable}`}>
         {children}
       </body>
     </html>
