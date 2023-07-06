@@ -3,16 +3,41 @@
 @tailwind utilities;
 
 @layer utilities {
-     .header-main{
+     .header-main {
           @apply flex justify-between mx-14 mt-7 items-center
      }
-     .header-name{
-          @apply font-extrabold text-3xl 
+
+     .header-name {
+          @apply font-extrabold text-3xl
      }
-     .header-menu{
+
+     .header-menu {
           @apply flex
      }
-     .header-menu-item{
+
+     .header-menu-item {
           @apply px-6 font-normal
+     }
+}
+
+@layer utilities {
+     .hero-main {
+          @apply flex justify-between mx-14 mt-20
+     }
+
+     .hero-text {
+          @apply my-auto font-bold text-3xl
+     }
+
+     .hero-h1 {
+          @apply border w-96 h-16 text-center pt-4 mb-10 bg-Background-blue text-white rounded-full font-extrabold
+     }
+
+     .hero-p {
+          @apply leading-loose
+     }
+
+     .hero-image {
+          @apply relative left-32 bottom-96
      }
 }
