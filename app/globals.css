@@ -7,12 +7,12 @@
           @apply flex justify-between mx-14 mt-10 items-center
      }
      .header-name{
-          @apply font-bold text-2xl 
+          @apply font-bold text-3xl 
      }
      .header-menu{
           @apply flex
      }
      .header-menu-item{
-          @apply px-5 
+          @apply px-5 font-light
      }
 }
