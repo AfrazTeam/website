@@ -2,7 +2,7 @@ interface iHeaderData {
   [key: string]: string
 }
 
-let header_data = {
+let desctop_menu_data = {
   name: 'افراز تیم',
   mainPage: 'صفحه اصلی',
   projects: 'پروژه ها',
@@ -11,4 +11,4 @@ let header_data = {
   freeConsultant: 'مشاوره رایگان',
 } satisfies iHeaderData
 
-export { header_data }
+export { desctop_menu_data }
