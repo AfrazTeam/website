@@ -4,7 +4,7 @@
 
 @layer utilities {
      .header-main{
-          @apply flex justify-between mx-14 mt-7 items-center
+          @apply flex justify-between mx-14 mt-2 items-center
      }
      .header-name{
           @apply font-extrabold text-3xl 
