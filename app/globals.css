@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 @layer utilities {
-     .header-main {
-          @apply flex justify-between mx-14 mt-7 items-center
+     .header-main{
+          @apply flex justify-between mx-14 mt-2 items-center
      }
 
      .header-name {
