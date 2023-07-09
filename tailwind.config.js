@@ -13,9 +13,9 @@ module.exports = {
         inter: 'var(--inter-google)',
       },
       colors: {
-        'Text-color': 'rgba(51,65,95,1)',
-        'Background-blue': 'rgba(68,161,246)',
-        'Page-background': 'rgba(237,241,244,1)',
+        'text-color': 'rgba(51,65,95,1)',
+        'background-blue': 'rgba(68,161,246)',
+        'page-background': 'rgba(237,241,244,1)',
       },
     },
   },
