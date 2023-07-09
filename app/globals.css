@@ -3,49 +3,55 @@
 @tailwind utilities;
 
 @layer utilities {
-     .header-main {
-          @apply flex justify-between mx-14 mt-2 items-center
-     }
+  .header-main {
+    @apply flex justify-between mt-2 items-center;
+  }
 
-     .header-name {
-          @apply font-extrabold text-3xl
-     }
+  .header-name {
+    @apply font-extrabold text-3xl;
+  }
 
-     .header-menu {
-          @apply flex
-     }
+  .header-menu {
+    @apply flex;
+  }
 
-     .header-menu-item {
-          @apply px-6 font-normal
-     }
+  .header-menu-item {
+    @apply px-6 font-normal;
+  }
 }
 
 @layer utilities {
-     .hero-main {
-          @apply flex justify-between w-full mt-16 mx-14
-     }
+  .hero {
+    @apply h-[800px]
+			flex w-full justify-between items-center;
+  }
 
-     .hero-text {
-          @apply font-bold text-3xl mt-32 w-1/2
-     }
+  .hero-box {
+    @apply flex flex-col justify-around h-[280px]
+			w-1/2 font-bold text-3xl text-center;
+  }
 
-     .hero-h1 {
-          @apply border w-96 h-16 text-center pt-4 bg-Background-blue text-white rounded-full font-extrabold
-     }
+  .hero-title {
+    @apply flex items-center justify-center
+			w-96 h-16 bg-background-blue
+			text-white rounded-full
+			font-extrabold;
+  }
 
-     .hero-p {
-          @apply leading-loose pt-10
-     }
+  .hero-descrption {
+    @apply leading-loose text-start;
+  }
 
-     .hero-svg-main {
-          @apply relative w-1/2 flex justify-end
-     }
+  .hero-svg-main {
+    @apply flex relative justify-center items-center
+			w-1/2 h-[800px];
+  }
 
-     .hero-svg {
-          @apply absolute top-1 left-1
-     }
+  .hero-svg {
+    @apply absolute left-0;
+  }
 
-     .hero-image {
-          @apply absolute top-24 left-48
-     }
+  .hero-image {
+    @apply absolute;
+  }
 }
