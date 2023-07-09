@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 @layer utilities {
-     .header-main{
+     .header-main {
           @apply flex justify-between mx-14 mt-2 items-center
      }
 
@@ -22,23 +22,29 @@
 
 @layer utilities {
      .hero-main {
-          @apply flex justify-between w-full mt-16 mx-14 
+          @apply flex justify-between w-full mt-16 mx-14
      }
+
      .hero-text {
           @apply font-bold text-3xl mt-32 w-1/2
      }
+
      .hero-h1 {
           @apply border w-96 h-16 text-center pt-4 bg-Background-blue text-white rounded-full font-extrabold
      }
+
      .hero-p {
           @apply leading-loose pt-10
      }
-     .hero-svg-main{
+
+     .hero-svg-main {
           @apply relative w-1/2 flex justify-end
      }
+
      .hero-svg {
           @apply absolute top-1 left-1
      }
+
      .hero-image {
           @apply absolute top-24 left-48
      }
