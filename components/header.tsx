@@ -1,4 +1,4 @@
-import { desctop_menu_data } from '@/data/header-data'
+import { desctop_menu_data } from '@/data/header'
 import Link from 'next/link'
 
 const Header = () => {
