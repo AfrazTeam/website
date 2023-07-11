@@ -1,11 +1,12 @@
 import React from 'react'
 import Image from 'next/image'
+import { text_general_data } from '@/data/text'
 import { TeammatesData } from '@/data/users'
 
 const Teammates = () => {
   return (
     <div>
-      <p className='teammates-p'>" هم تیمی ها</p>
+      <p className='teammates-p'>{text_general_data.teammates}</p>
       <div className='teammates-main'>
         {TeammatesData.map((item) => (
           <div className='teammates-svg'>
