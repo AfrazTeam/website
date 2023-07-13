@@ -1,14 +1,14 @@
-interface iHeaderData {
+interface iDataHeader {
   [key: string]: string
 }
 
-let desctop_menu_data = {
+let dataDesctopMenu = {
   name: 'افراز تیم',
   mainPage: 'صفحه اصلی',
   projects: 'پروژه ها',
   weblog: 'وبلاگ',
   about: 'درباره ما',
   freeConsultant: 'مشاوره رایگان',
-} satisfies iHeaderData
+} satisfies iDataHeader
 
-export { desctop_menu_data }
+export { dataDesctopMenu }

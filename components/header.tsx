@@ -1,27 +1,27 @@
-import { desctop_menu_data } from '@/data/header'
+import { dataDesctopMenu } from '@/data/header'
 import Link from 'next/link'
 
 const Header = () => {
   return (
     <div className="header-main">
       <Link href="#" className="header-name">
-        {desctop_menu_data.name}
+        {dataDesctopMenu.name}
       </Link>
       <div className="header-menu">
         <Link href="/" className="header-menu-item">
-          {desctop_menu_data.mainPage}
+          {dataDesctopMenu.mainPage}
         </Link>
         <Link href="/" className="header-menu-item">
-          {desctop_menu_data.projects}
+          {dataDesctopMenu.projects}
         </Link>
         <Link href="/" className="header-menu-item">
-          {desctop_menu_data.weblog}
+          {dataDesctopMenu.weblog}
         </Link>
         <Link href="/" className="header-menu-item">
-          {desctop_menu_data.about}
+          {dataDesctopMenu.about}
         </Link>
         <Link href="/" className="header-menu-item text-green-600">
-          {desctop_menu_data.freeConsultant}
+          {dataDesctopMenu.freeConsultant}
         </Link>
       </div>
       <Link href="/">

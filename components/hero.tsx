@@ -1,13 +1,13 @@
 import React from 'react'
-import { text_general_data } from '@/data/text'
+import { dataTextGeneral } from '@/data/text'
 import Image from 'next/image'
 
 const Hero = () => {
   return (
     <div className="hero">
       <div className="hero-box">
-        <div className="hero-title">{text_general_data.group}</div>
-        <p className="hero-descrption">{text_general_data.title}</p>
+        <div className="hero-title">{dataTextGeneral.group}</div>
+        <p className="hero-descrption">{dataTextGeneral.title}</p>
       </div>
       <div className="hero-svg-main">
         <div className="hero-svg">
