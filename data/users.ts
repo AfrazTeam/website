@@ -1,10 +1,10 @@
-interface TeammatesData {
+interface dataTeammates {
   id: number
   name: string
   skill: string
 }
 
-export const TeammatesData = [
+export const dataTeammates = [
   {
     id: 1,
     name: 'احسان صفری',

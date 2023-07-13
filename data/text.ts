@@ -1,12 +1,12 @@
-interface iTextData {
-  [key:string]:string
+interface iDataText {
+  [key: string]: string
 }
 
-let text_general_data: iTextData = {
+let dataTextGeneral: iDataText = {
   group: 'گروه برنامه نویسان افراز تیم',
   title:
     'ایده های خود را با خدمات کامل تیم برنامه نویسی ما به واقعیت تبدیل کنید.',
-  teammates:'"هم تیمی ها',
-}satisfies iTextData
+  teammates: '"هم تیمی ها',
+} satisfies iDataText
 
-export { text_general_data }
+export { dataTextGeneral }
