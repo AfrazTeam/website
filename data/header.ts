@@ -8,7 +8,6 @@ let dataDesctopMenu = {
   projects: 'پروژه ها',
   weblog: 'وبلاگ',
   about: 'درباره ما',
-  freeConsultant: 'مشاوره رایگان',
 } satisfies iDataHeader
 
 export { dataDesctopMenu }

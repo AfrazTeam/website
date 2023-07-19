@@ -4,7 +4,7 @@
 
 @layer utilities {
   .header-main {
-    @apply flex justify-between pt-5 items-center;
+    @apply flex justify-between px-14 h-20 items-center border-b-2 border-green-300 bg-white;
   }
 
   .header-name {
@@ -12,11 +12,15 @@
   }
 
   .header-menu {
-    @apply flex;
+    @apply flex items-center;
   }
 
   .header-menu-item {
     @apply px-6 font-normal;
+  }
+
+  .header-button {
+    @apply border h-10 w-28 rounded-3xl text-sm text-white bg-background-blue mx-3
   }
 }
 
