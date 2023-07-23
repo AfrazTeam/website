@@ -4,7 +4,7 @@
 
 @layer utilities {
   .header-main {
-    @apply flex justify-between pt-5 items-center;
+    @apply flex justify-between px-20 h-20 items-center border-b-2 border-green-300 bg-white;
   }
 
   .header-name {
@@ -12,43 +12,75 @@
   }
 
   .header-menu {
-    @apply flex;
+    @apply flex items-center;
   }
 
   .header-menu-item {
     @apply px-6 font-normal;
   }
+
+  .header-button {
+    @apply border h-10 w-28 rounded-3xl text-sm text-white bg-background-blue mx-3
+  }
 }
 
 @layer utilities {
   .hero {
-    @apply h-[800px] flex w-full justify-between items-center;
+    @apply h-[700px] flex w-full justify-between items-center px-20;
   }
 
   .hero-box {
-    @apply flex flex-col justify-around h-[280px] w-1/2 font-bold text-3xl text-center;
+    @apply flex flex-col justify-between h-[400px] w-1/2
+  }
+
+  .hero-name {
+    @apply text-background-blue text-3xl font-extrabold
   }
 
   .hero-title {
-    @apply flex items-center justify-center w-96 h-16 bg-background-blue text-white rounded-full font-extrabold;
+    @apply font-extrabold text-3xl leading-normal
   }
 
   .hero-descrption {
-    @apply leading-loose text-start;
+    @apply font-bold text-gray-600 text-2xl leading-normal
   }
 
-  .hero-svg-main {
-    @apply flex relative justify-center items-center w-1/2 h-[800px];
+  .hero-button {
+    @apply flex text-sm
+  }
+
+  .hero-counseling {
+    @apply border-2 border-background-blue w-32 h-10 rounded-full bg-background-blue text-white
+  }
+
+  .hero-services {
+    @apply border-2 border-background-blue w-32 h-10 rounded-full text-background-blue mr-5
   }
 
   .hero-svg {
-    @apply absolute left-0;
-  }
-
-  .hero-image {
-    @apply absolute;
+    @apply flex justify-end w-1/2
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @layer utilities {
   .teammates-p {

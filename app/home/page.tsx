@@ -5,7 +5,7 @@ import Teammates from '@/components/teammates'
 
 export default function Home() {
   return (
-    <div className="container mx-auto bg-page-background ">
+    <div>
       <Header />
       <Hero />
       <Teammates />
