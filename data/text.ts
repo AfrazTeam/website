@@ -11,6 +11,12 @@ let dataTextGeneral: iDataText = {
   counseling: 'مشاوره رایگان',
   services: 'خدمات ما',
   afrazteam: 'افراز تیم ',
+  NumberOngoinProjects:'2',
+  inProgressProjects:'پروژه های در حال انجام',
+  NumberSatisfiedCustomers:'5 +',
+  SatisfiedCustomers:'مشتریان راضی',
+  NumberCompletedProjects:'4',
+  CompletedProjects:'پروژه های انجام شده'
 } satisfies iDataText
 
 export { dataTextGeneral }

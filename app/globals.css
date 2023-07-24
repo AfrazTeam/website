@@ -62,25 +62,27 @@
   }
 }
 
+@layer utilities {
+  .number-project-main {
+    @apply flex justify-center
+  }
 
+  .number-projects {
+    @apply flex flex-col items-center justify-center w-96 h-20
+  }
 
+  .satisfied-customers {
+    @apply border-x-2 border-gray-400
+  }
 
+  .numbers {
+    @apply font-extrabold text-background-blue text-3xl
+  }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  .number-text {
+    @apply text-gray-600
+  }
+}
 
 @layer utilities {
   .teammates-p {
