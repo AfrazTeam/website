@@ -3,6 +3,7 @@ import Header from '@/components/header'
 import Hero from '@/components/hero'
 import Teammates from '@/components/teammates'
 import NumberProjects from '@/components/numberProjects'
+import Services from '@/components/services'
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <Header />
       <Hero />
       <NumberProjects />
+      <Services />
       <Teammates />
     </div>
   )
