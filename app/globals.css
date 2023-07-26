@@ -110,20 +110,22 @@
   }
 
   .services-bottom-item {
-    @apply flex flex-col justify-center border w-96 h-64 rounded-2xl
+    @apply flex flex-col justify-center border w-96 h-60 rounded-2xl
   }
 
   .services-bottom-name {
     @apply flex justify-center items-center font-bold text-xl
   }
 
-  .services-bottom-title {
-    @apply text-gray-500 text-sm m-5 text-center
-  }
-
   .services-span {
     @apply pr-3
   }
+
+  .services-bottom-title {
+    @apply text-gray-500 text-sm m-5
+  }
+
+
 }
 
 @layer utilities {
