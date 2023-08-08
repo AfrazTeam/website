@@ -22,7 +22,7 @@ const Hero = () => {
             <Link href="/">{dataTextGeneral.counseling}</Link>
           </button>
           <button className='hero-services'>
-            <Link href="/">{dataTextGeneral.services}</Link>
+            <Link href="/">{dataTextGeneral.ourservices}</Link>
           </button>
         </div>
       </div>

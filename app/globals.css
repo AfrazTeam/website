@@ -85,6 +85,50 @@
 }
 
 @layer utilities {
+  .services {
+    @apply border mx-20 mt-28 flex flex-col bg-white rounded-2xl
+  }
+
+  .services-top {
+    @apply flex justify-between px-16 items-center
+  }
+
+  .services-top-item {
+    @apply w-1/2 relative bottom-10
+  }
+
+  .services-text {
+    @apply flex items-center font-extrabold text-2xl text-background-blue
+  }
+
+  .services-title {
+    @apply text-gray-600 mt-5
+  }
+
+  .services-bottom {
+    @apply grid grid-cols-3 place-items-center gap-10 mb-16 px-16
+  }
+
+  .services-bottom-item {
+    @apply flex flex-col justify-center border w-96 h-60 rounded-2xl
+  }
+
+  .services-bottom-name {
+    @apply flex justify-center items-center font-bold text-xl
+  }
+
+  .services-span {
+    @apply pr-3
+  }
+
+  .services-bottom-title {
+    @apply text-gray-500 text-sm m-5
+  }
+
+
+}
+
+@layer utilities {
   .teammates-p {
     @apply text-lg mb-14 font-bold
   }
