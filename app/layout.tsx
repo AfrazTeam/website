@@ -1,3 +1,4 @@
+import Header from '@/components/header'
 import './globals.css'
 import { inter, yekanBakh } from '@/app/fonts'
 
@@ -12,8 +13,9 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="fa">
+    <html lang="fa" dir="rtl">
       <body className={`${yekanBakh.className} ${inter.variable}`}>
+        <Header />
         {children}
       </body>
     </html>
