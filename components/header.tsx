@@ -11,9 +11,15 @@ const Header = () => {
         </Link>
       </div>
       <div className="header-menu">
-        <Link href="/" className="header-menu_item">
-          {dataDesctopMenu.mainPage}
-        </Link>
+        <div className="border-b-2 border-blue-700 h-full">
+          <Link
+            href="/"
+            className="header-menu_item"
+          >
+            {dataDesctopMenu.mainPage}
+          </Link>
+        </div>
+
         <Link href="/" className="header-menu_item">
           {dataDesctopMenu.projects}
         </Link>

@@ -18,7 +18,7 @@
 
 @layer utilities {
   .header-main {
-    @apply flex sticky top-0 z-50 w-full justify-start px-20 h-20 items-center border-b-2 border-green-300 bg-white;
+    @apply flex sticky top-0 z-50 w-full justify-start px-20 h-16 items-center border-b-2 bg-white;
   }
 
   .header-logo {
@@ -32,7 +32,7 @@
     @apply flex items-center w-[inherit];
   }
   .header-menu_item {
-    @apply px-6 font-normal;
+    @apply block text-center px-5 py-5 font-normal;
   }
 
   .header-project-order {
