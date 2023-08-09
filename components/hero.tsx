@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { dataTextGeneral } from '@/data/text'
 
 const Hero = () => {
@@ -8,7 +8,7 @@ const Hero = () => {
     <div className="hero">
       <div className="hero-box">
         <Image
-          className=""
+          className="animate__animated animate__flash"
           src="svgs/Vector.svg"
           width={80}
           height={80}
@@ -30,7 +30,7 @@ const Hero = () => {
           </button>
         </div>
       </div>
-      <div className="hero-svg">
+      <div className="hero-svg animate__animated animate__zoomIn">
         <Image
           src="/svgs/team1.svg"
           width={500}
