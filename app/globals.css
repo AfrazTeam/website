@@ -45,7 +45,7 @@
 
 @layer utilities {
   .hero {
-    @apply h-[calc(100vh-80px)] flex w-full justify-between items-center;
+    @apply h-[calc(100vh-64px)] flex w-full justify-between items-center;
   }
 
   .hero-box {
