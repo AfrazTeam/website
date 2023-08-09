@@ -1,5 +1,7 @@
 import Header from '@/components/header'
 import './globals.css'
+import 'animate.css'
+
 import { inter, yekanBakh } from '@/app/fonts'
 
 export const metadata = {

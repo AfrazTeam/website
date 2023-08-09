@@ -4,156 +4,159 @@
 
 @layer utilities {
   .header-main {
-    @apply flex justify-between px-20 h-20 items-center border-b-2 border-green-300 bg-white;
+    @apply flex sticky top-0 z-50 w-full justify-start px-20 h-20 items-center border-b-2 border-green-300 bg-white;
   }
 
-  .header-name {
+  .header-logo {
+    @apply w-52;
+  }
+  .header-logo_text {
     @apply font-extrabold text-3xl;
   }
 
   .header-menu {
-    @apply flex items-center;
+    @apply flex items-center w-[inherit];
   }
-
-  .header-menu-item {
+  .header-menu_item {
     @apply px-6 font-normal;
   }
 
-  .header-button {
-    @apply border h-10 w-28 rounded-3xl text-sm text-white bg-background-blue mx-3
+  .header-project-order {
+    @apply flex items-center;
+  }
+  .header-project-order_button {
+    @apply h-10 w-28 mx-3 rounded-full font-semibold text-sm text-white bg-background-blue;
   }
 }
 
 @layer utilities {
   .hero {
-    @apply h-[700px] flex w-full justify-between items-center px-20;
+    @apply h-[calc(100vh-80px)] flex w-full justify-between items-center;
   }
 
   .hero-box {
-    @apply flex flex-col justify-between h-[400px] w-1/2
+    @apply flex flex-col justify-between h-[400px] w-1/2;
   }
 
   .hero-name {
-    @apply text-background-blue text-3xl font-extrabold
+    @apply text-background-blue text-3xl font-extrabold;
   }
 
   .hero-title {
-    @apply font-extrabold text-3xl leading-normal
+    @apply font-extrabold text-3xl leading-normal;
   }
 
   .hero-descrption {
-    @apply font-bold text-gray-600 text-2xl leading-normal
+    @apply font-bold text-gray-600 text-2xl leading-normal;
   }
 
   .hero-button {
-    @apply flex text-sm
+    @apply flex text-sm;
   }
 
   .hero-counseling {
-    @apply border-2 border-background-blue w-32 h-10 rounded-full bg-background-blue text-white
+    @apply border-2 border-background-blue w-32 h-10 rounded-full bg-background-blue text-white;
   }
 
   .hero-services {
-    @apply border-2 border-background-blue w-32 h-10 rounded-full text-background-blue mr-5
+    @apply border-2 border-background-blue w-32 h-10 rounded-full text-background-blue mr-5;
   }
 
   .hero-svg {
-    @apply flex justify-end w-1/2
+    @apply flex justify-end w-1/2;
   }
 }
 
 @layer utilities {
   .number-project-main {
-    @apply flex justify-center
+    @apply flex justify-center;
   }
 
   .number-projects {
-    @apply flex flex-col items-center justify-center w-96 h-20
+    @apply flex flex-col items-center justify-center w-96 h-20;
   }
 
   .satisfied-customers {
-    @apply border-x-2 border-gray-400
+    @apply border-x-2 border-gray-400;
   }
 
   .numbers {
-    @apply font-extrabold text-background-blue text-3xl
+    @apply font-extrabold text-background-blue text-3xl;
   }
 
   .number-text {
-    @apply text-gray-600
+    @apply text-gray-600;
   }
 }
 
 @layer utilities {
   .services {
-    @apply border mx-20 mt-28 flex flex-col bg-white rounded-2xl
+    @apply border mx-20 mt-28 flex flex-col bg-white rounded-2xl;
   }
 
   .services-top {
-    @apply flex justify-between px-16 items-center
+    @apply flex justify-between px-16 items-center;
   }
 
   .services-top-item {
-    @apply w-1/2 relative bottom-10
+    @apply w-1/2 relative bottom-10;
   }
 
   .services-text {
-    @apply flex items-center font-extrabold text-2xl text-background-blue
+    @apply flex items-center font-extrabold text-2xl text-background-blue;
   }
 
   .services-title {
-    @apply text-gray-600 mt-5
+    @apply text-gray-600 mt-5;
   }
 
   .services-bottom {
-    @apply grid grid-cols-3 place-items-center gap-10 mb-16 px-16
+    @apply grid grid-cols-3 place-items-center gap-10 mb-16 px-16;
   }
 
   .services-bottom-item {
-    @apply flex flex-col justify-center border w-96 h-60 rounded-2xl
+    @apply flex flex-col justify-center border w-96 h-60 rounded-2xl;
   }
 
   .services-bottom-name {
-    @apply flex justify-center items-center font-bold text-xl
+    @apply flex justify-center items-center font-bold text-xl;
   }
 
   .services-span {
-    @apply pr-3
+    @apply pr-3;
   }
 
   .services-bottom-title {
-    @apply text-gray-500 text-sm m-5
+    @apply text-gray-500 text-sm m-5;
   }
-
-
 }
 
 @layer utilities {
   .teammates-p {
-    @apply text-lg mb-14 font-bold
+    @apply text-lg mb-14 font-bold;
   }
 
   .teammates-main {
-    @apply grid grid-cols-3 gap-10
+    @apply grid grid-cols-3 gap-10;
   }
 
   .teammates-svg {
-    @apply relative
+    @apply relative;
   }
 
   .teammates-name {
-    @apply absolute bottom-20 right-16 font-semibold
+    @apply absolute bottom-20 right-16 font-semibold;
   }
 
   .teammates-skill {
-    @apply absolute bottom-10 right-16 text-gray-400
+    @apply absolute bottom-10 right-16 text-gray-400;
   }
 
   .teammates-image-user {
-    @apply absolute border-4 border-green-500 bottom-14 right-64 rounded-2xl
+    @apply absolute border-4 border-green-500 bottom-14 right-64 rounded-2xl;
   }
 
   .teammates-image {
-    @apply rounded-xl
+    @apply rounded-xl;
   }
 }

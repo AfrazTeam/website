@@ -1,27 +1,31 @@
-import React from 'react'
-import { dataTextGeneral } from '@/data/text'
 import Image from 'next/image'
 import Link from 'next/link'
+import React from 'react'
+import { dataTextGeneral } from '@/data/text'
 
 const Hero = () => {
   return (
     <div className="hero">
       <div className="hero-box">
         <Image
-          src='svgs/Vector.svg'
-          width={100}
-          height={100}
-          alt='Vector' />
+          className=""
+          src="svgs/Vector.svg"
+          width={80}
+          height={80}
+          alt="Vector"
+        />
         <div>
-          <span className='hero-name'>{dataTextGeneral.afrazteam}</span>
-          <span className="hero-title">{dataTextGeneral.group}</span>
+          <div className="">
+            <span className="hero-name">{dataTextGeneral.afrazteam}</span>
+            <span className="hero-title">{dataTextGeneral.group}</span>
+          </div>
         </div>
         <p className="hero-descrption">{dataTextGeneral.title}</p>
-        <div className='hero-button'>
-          <button className='hero-counseling'>
+        <div className="hero-button">
+          <button className="hero-counseling">
             <Link href="/">{dataTextGeneral.counseling}</Link>
           </button>
-          <button className='hero-services'>
+          <button className="hero-services">
             <Link href="/">{dataTextGeneral.ourservices}</Link>
           </button>
         </div>
