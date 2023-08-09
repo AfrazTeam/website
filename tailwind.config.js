@@ -15,7 +15,7 @@ module.exports = {
       colors: {
         'text-color': 'rgba(51,65,95,1)',
         'background-blue': 'rgba(57,112,253)',
-        'page-background': 'rgba(237,241,244,1)',
+        'page-background': '#fafbfc',
       },
     },
   },
