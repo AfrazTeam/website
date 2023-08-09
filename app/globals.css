@@ -2,6 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #d6d6d6;
+}
+::-webkit-scrollbar-thumb {
+  background: #3970fd;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #0032b4;
+}
+
 @layer utilities {
   .header-main {
     @apply flex sticky top-0 z-50 w-full justify-start px-20 h-20 items-center border-b-2 border-green-300 bg-white;
