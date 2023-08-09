@@ -44,12 +44,15 @@
 }
 
 @layer utilities {
+  .hero-main {
+    @apply h-[calc(100vh-64px)] flex flex-col justify-center;
+  }
   .hero {
-    @apply h-[calc(100vh-64px)] flex w-full justify-between items-center;
+    @apply flex w-full justify-between items-center;
   }
 
   .hero-box {
-    @apply flex flex-col justify-between h-[400px] w-1/2;
+    @apply flex flex-col justify-between h-96 w-1/2;
   }
 
   .hero-name {
