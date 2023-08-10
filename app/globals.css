@@ -39,7 +39,7 @@
     @apply flex items-center;
   }
   .header-project-order_button {
-    @apply h-10 w-28 mx-3 rounded-full font-semibold text-sm text-white bg-background-blue;
+    @apply h-10 w-28 mx-3 rounded-md font-semibold text-sm text-white bg-background-blue;
   }
 }
 
@@ -60,11 +60,13 @@
   }
 
   .hero-title {
-    @apply font-extrabold text-3xl leading-normal;
+    @apply font-extrabold text-3xl leading-normal 
+       text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-600;
   }
 
   .hero-descrption {
-    @apply font-bold text-gray-600 text-2xl leading-normal;
+    @apply font-bold text-white text-2xl leading-normal
+      bg-gradient-to-r from-cyan-300 to-blue-500 rounded-md p-3;
   }
 
   .hero-button {
@@ -72,11 +74,11 @@
   }
 
   .hero-counseling {
-    @apply border-2 border-background-blue w-32 h-10 rounded-full bg-background-blue text-white;
+    @apply border-2 border-background-blue w-36 h-12 rounded-md bg-background-blue text-white mt-5;
   }
 
   .hero-services {
-    @apply border-2 border-background-blue w-32 h-10 rounded-full text-background-blue mr-5;
+    @apply border-2 border-background-blue w-36 h-12 rounded-md text-background-blue mr-5 mt-5;
   }
 
   .hero-svg {

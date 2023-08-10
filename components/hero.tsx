@@ -18,12 +18,11 @@ const Hero = () => {
               alt="Vector"
             />
             <div>
-              <div className="">
-                <span className="hero-name">{dataTextGeneral.afrazteam}</span>
-                <span className="hero-title">{dataTextGeneral.group}</span>
-              </div>
+              <span className="hero-title">{dataTextGeneral.group}</span>
             </div>
-            <p className="hero-descrption">{dataTextGeneral.title}</p>
+            <p className="hero-descrption animate__animated animate__flash">
+              {dataTextGeneral.title}
+            </p>
             <div className="hero-button">
               <button className="hero-counseling">
                 <Link href="/">{dataTextGeneral.counseling}</Link>
