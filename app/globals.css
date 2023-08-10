@@ -149,33 +149,3 @@
     @apply text-gray-500 text-sm m-5 leading-8;
   }
 }
-
-@layer utilities {
-  .teammates-p {
-    @apply text-lg mb-14 font-bold;
-  }
-
-  .teammates-main {
-    @apply grid grid-cols-3 gap-10;
-  }
-
-  .teammates-svg {
-    @apply relative;
-  }
-
-  .teammates-name {
-    @apply absolute bottom-20 right-16 font-semibold;
-  }
-
-  .teammates-skill {
-    @apply absolute bottom-10 right-16 text-gray-400;
-  }
-
-  .teammates-image-user {
-    @apply absolute border-4 border-green-500 bottom-14 right-64 rounded-2xl;
-  }
-
-  .teammates-image {
-    @apply rounded-xl;
-  }
-}
