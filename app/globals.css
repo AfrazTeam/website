@@ -48,7 +48,7 @@
     @apply h-[calc(100vh-64px)] flex flex-col justify-center;
   }
   .hero {
-    @apply flex w-full justify-between items-center;
+    @apply flex w-full justify-between items-center container mx-auto;
   }
 
   .hero-box {
