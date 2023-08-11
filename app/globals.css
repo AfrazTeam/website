@@ -39,7 +39,7 @@
     @apply flex items-center;
   }
   .header-project-order_button {
-    @apply h-10 w-28 mx-3 rounded-md font-semibold text-sm text-white bg-background-blue;
+    @apply h-10 w-28 mx-3 rounded-md font-semibold text-sm text-white bg-gradient-to-b from-blue-500 to-blue-600;
   }
 }
 
@@ -74,7 +74,8 @@
   }
 
   .hero-counseling {
-    @apply border-2 border-background-blue w-36 h-12 rounded-md bg-background-blue text-white mt-5;
+    @apply w-36 h-12 rounded-md text-white mt-5 
+      bg-gradient-to-b from-blue-500 to-blue-600;
   }
 
   .hero-services {
