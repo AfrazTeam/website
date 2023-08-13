@@ -18,10 +18,10 @@
 
 @layer utilities {
   .header-main {
-    @apply bg-[#0e202e] h-16 sticky top-0 z-50 w-full;
+    @apply bg-[#0e202e] h-16 sticky top-0 z-50 w-full shadow-md shadow-slate-900;
   }
   .header-container {
-    @apply container mx-auto flex justify-start items-center text-white ;
+    @apply container mx-auto flex justify-start items-center text-white;
   }
 
   .header-logo {
