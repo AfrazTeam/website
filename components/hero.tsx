@@ -39,9 +39,9 @@ const Hero = () => {
               </button>
             </div>
           </div>
-          <div className="hero-svg animate__animated animate__zoomIn">
+          <div className="hero-svg animate__animated animate__zoomIn ">
             <Image
-              className="rotate-scale-up"
+              className="drop-shadow-[0_30px_30px_rgba(97,79,30,0.70)]"
               src="/svgs/team1.svg"
               width={500}
               height={500}

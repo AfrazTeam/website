@@ -79,12 +79,12 @@
   }
 
   .hero-counseling {
-    @apply w-36 h-12 rounded-md text-white mt-5 
+    @apply w-40 h-14 rounded-md text-white mt-5 
       bg-gradient-to-b from-blue-500 to-blue-600;
   }
 
   .hero-services {
-    @apply border-2 border-background-blue w-36 h-12 rounded-md text-background-blue mr-5 mt-5;
+    @apply border-2 border-background-blue w-40 h-14 rounded-md text-background-blue mr-5 mt-5;
   }
 
   .hero-svg {
