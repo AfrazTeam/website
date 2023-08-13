@@ -12,14 +12,14 @@ const Hero = () => {
           <div className="hero-box">
             <div className="flex items-center pt-10 ">
               <Image
-              className="animate__animated animate__flash"
+                className="animate__animated animate__flash"
                 src="svgs/Vector.svg"
                 width={30}
                 height={30}
                 alt="Vector"
               />
               <span
-                className="text-sm mx-2 bg-gradient-to-tr from-cyan-600 to-cyan-700 rounded-md 
+                className="text-base mx-2 bg-gradient-to-tr from-cyan-600 to-cyan-700 rounded-md 
                px-2 py-1 text-transparent bg-clip-text"
               >
                 با ما کسب و کار خود را رشد دهید

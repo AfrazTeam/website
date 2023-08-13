@@ -65,13 +65,13 @@
   }
 
   .hero-title {
-    @apply font-extrabold text-3xl leading-normal 
+    @apply font-extrabold text-5xl leading-normal 
        text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-600;
   }
 
   .hero-descrption {
-    @apply font-bold text-white text-2xl leading-normal
-      bg-gradient-to-r from-cyan-300 to-blue-500 rounded-md p-3;
+    @apply font-bold text-slate-400 text-2xl leading-normal rounded-md p-4
+    backdrop-blur-sm bg-white/5 my-5;
   }
 
   .hero-button {
