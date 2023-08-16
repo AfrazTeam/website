@@ -7,47 +7,42 @@ import CounterProjects from './counterProjects'
 const Hero = () => {
   return (
     <div className="hero-main">
-      <div className="h-[90%] items-center flex flex-col justify-around max-h-[60rem]">
-        <div className="hero">
-          <div className="hero-box">
-            <div className="flex items-center mb-3">
-              <Image
-                className="animate__animated animate__flash"
-                src="svgs/Vector.svg"
-                width={30}
-                height={30}
-                alt="Vector"
-              />
-              <span
-                className="text-base mx-2 bg-primary rounded-md 
-               px-2 py-1 text-transparent bg-clip-text"
-              >
-                با ما کسب و کار خود را رشد دهید
-              </span>
-            </div>
-            <p className="hero-title ">{dataTextGeneral.group}</p>
-            <p className="hero-descrption animate__animated animate__flash">
-              {dataTextGeneral.title}
-            </p>
-            <CounterProjects />
-            <div className="hero-button">
-              <button className="hero-counseling">
-                <Link href="/">{dataTextGeneral.counseling}</Link>
-              </button>
-              <button className="hero-services">
-                <Link href="/">{dataTextGeneral.ourservices}</Link>
-              </button>
-            </div>
-          </div>
-          <div className="hero-svg animate__animated animate__zoomIn ">
+      <div className="hero">
+        <div className="hero-box">
+          <div className="flex items-center">
             <Image
-              className="drop-shadow-[0_30px_30px_rgba(97,79,30,0.90)]"
-              src="/svgs/standup-meeting-not-css.svg"
-              width={620}
-              height={500}
-              alt="afraz team"
+              className="animate__animated animate__flash"
+              src="svgs/Vector.svg"
+              width={30}
+              height={30}
+              alt="Vector"
             />
+            <span className="hero-top-title">
+              با ما کسب و کار خود را رشد دهید
+            </span>
           </div>
+          <p className="hero-title">{dataTextGeneral.group}</p>
+          <p className="hero-descrption animate__animated animate__flash">
+            {dataTextGeneral.title}
+          </p>
+          <CounterProjects />
+          <div className="hero-button">
+            <button className="hero-counseling">
+              <Link href="/">{dataTextGeneral.counseling}</Link>
+            </button>
+            <button className="hero-services">
+              <Link href="/">{dataTextGeneral.ourservices}</Link>
+            </button>
+          </div>
+        </div>
+        <div className="hero-svg animate__animated animate__zoomIn">
+          <Image
+            className="drop-shadow-[0_30px_30px_rgba(97,79,30,0.90)]"
+            src="/svgs/standup-meeting-not-css.svg"
+            width={620}
+            height={500}
+            alt="afraz team"
+          />
         </div>
       </div>
       <div
