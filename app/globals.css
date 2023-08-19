@@ -101,7 +101,7 @@
   .hero {
     @apply flex flex-col-reverse w-full px-5;
     @apply md:container md:mx-auto md:px-2;
-    @apply lg:flex-row lg:py-10 lg:items-center;
+    @apply lg:flex-row lg:py-8 lg:items-center;
   }
 
   .hero-box {
