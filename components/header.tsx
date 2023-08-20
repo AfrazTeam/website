@@ -30,9 +30,11 @@ const Header = () => {
         </div>
         <div className="header-project-order">
           <button className="header-project-order_button">
-            <Link href="/">{dataTextGeneral.projectOrder}</Link>
+            <Link href="https://t.me/SafariDeveloper/">
+              {dataTextGeneral.projectOrder}
+            </Link>
           </button>
-          <Link href="/" className="">
+          <Link href="https://github.com/AfrazTeam/" className="">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 72 72"

@@ -9,7 +9,9 @@ const HeroButtuns = () => {
   return (
     <div className="hero-button">
       <button className="hero-counseling">
-        <Link href="/">{dataTextGeneral.counseling}</Link>
+        <Link href="https://t.me/SafariDeveloper/">
+          {dataTextGeneral.counseling}
+        </Link>
       </button>
       <button className="hero-services">
         <Link href="/">{dataTextGeneral.ourservices}</Link>
