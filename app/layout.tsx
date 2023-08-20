@@ -3,6 +3,7 @@ import './globals.css'
 import 'animate.css'
 
 import { inter, yekanBakh } from '@/app/fonts'
+import { Footer } from '@/components/footer'
 
 export const metadata = {
   title: 'افراز تیم | Afraz Team',
@@ -19,6 +20,7 @@ export default function RootLayout({
       <body className={`${yekanBakh.className} ${inter.variable}`}>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   )

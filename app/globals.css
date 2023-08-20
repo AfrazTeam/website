@@ -28,7 +28,7 @@
 }
 @layer base {
   :root {
-    --background: #fafbfc;
+    --background: #f7f7f7;
     --foreground: #232333;
     --card: 0 0% 100%;
     --card-foreground: 20 14.3% 4.1%;
@@ -81,6 +81,27 @@
   }
   .header-project-order_button {
     @apply h-10 w-28 mx-3 rounded-md font-semibold text-sm text-primary-foreground bg-foreground;
+  }
+}
+@layer components {
+  .footer {
+    background: linear-gradient(
+      41deg,
+      #010101,
+      #220f4c,
+      #010101,
+      #220f4c,
+      #010101
+    );
+    background-size: 300% 300%;
+    animation: gradient-animation 15s ease infinite;
+    @apply text-primary-foreground;
+  }
+  .footer-main {
+    @apply mx-auto w-full max-w-screen-2xl p-4 py-6 lg:py-8;
+  }
+  .sub-footer {
+    @apply sm:flex sm:items-center sm:justify-between;
   }
 }
 
@@ -166,16 +187,22 @@
 }
 
 @layer utilities {
+  .services-main {
+    @apply flex flex-col-reverse w-full px-5;
+    @apply md:container md:mx-auto;
+  }
   .services {
-    @apply border mt-28 flex flex-col bg-white rounded-2xl;
+    @apply my-28 flex flex-col;
   }
 
   .services-top {
-    @apply flex justify-between px-16 items-center;
+    @apply flex flex-col-reverse justify-between items-center bg-white py-10 my-10 rounded-lg;
+    @apply lg:flex-row;
   }
 
   .services-top-item {
-    @apply w-1/2 relative bottom-10;
+    @apply relative;
+    @apply lg:bottom-10;
   }
 
   .services-text {
@@ -187,15 +214,20 @@
   }
 
   .services-bottom {
-    @apply grid grid-cols-3 place-items-center gap-10 mb-16 px-16;
+    @apply grid grid-cols-1 place-items-center gap-8 mb-16;
+    @apply md:grid-cols-2;
+    @apply lg:grid-cols-3;
   }
-
+  .hovered {
+    color: white;
+    background: linear-gradient(220.55deg, #6c638f 0%, #6c63ff 100%);
+  }
   .services-bottom-item {
-    @apply flex flex-col justify-center border w-96 h-60 rounded-2xl;
+    @apply hover:hovered flex flex-col justify-center  w-full h-52 rounded-xl bg-white;
   }
 
   .services-bottom-name {
-    @apply flex items-center font-bold text-xl mr-5;
+    @apply flex items-center font-bold text-xl mx-5;
   }
 
   .services-span {
@@ -203,6 +235,6 @@
   }
 
   .services-bottom-title {
-    @apply text-gray-500 text-sm m-5 leading-8;
+    @apply text-sm m-5 leading-8;
   }
 }

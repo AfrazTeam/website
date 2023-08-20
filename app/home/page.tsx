@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <>
       <Hero />
-      {/* <Services /> */}
+      <Services />
       {/* <Teammates /> */}
     </>
   )
