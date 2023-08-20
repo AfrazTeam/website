@@ -214,7 +214,7 @@
   }
 
   .services-bottom {
-    @apply grid grid-cols-1 place-items-center gap-8 mb-16;
+    @apply text-[#4a4b4b] grid grid-cols-1 place-items-center gap-8 mb-16;
     @apply md:grid-cols-2;
     @apply lg:grid-cols-3;
   }
