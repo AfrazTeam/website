@@ -54,26 +54,29 @@
 
 @layer utilities {
   .header-main {
-    @apply bg-primary h-16 sticky top-0 z-50 w-full px-2 flex;
+    @apply  h-14 top-4 z-50 w-full flex absolute;
   }
   .header-container {
-    @apply w-full flex justify-between items-center text-foreground;
+    @apply container mx-auto w-[90%] bg-primary px-5 flex justify-between items-center text-foreground rounded-full;
     @apply md:container md:mx-auto md:justify-start;
+    @apply sm:w-[90%];
+    @apply lg:w-[70%];
   }
 
   .header-logo {
-    @apply w-52;
+    @apply w-52 flex-1;
   }
   .header-logo_text {
-    @apply font-extrabold text-3xl;
+    @apply font-extrabold text-2xl;
   }
 
   .header-menu {
     @apply hidden items-center w-[inherit];
-    @apply md:flex;
+    @apply sm:hidden;
+    @apply lg:flex;
   }
   .header-menu_item {
-    @apply block text-center px-5 py-5 font-normal;
+    @apply block text-center px-4 py-4 font-normal;
   }
 
   .header-project-order {
@@ -120,7 +123,7 @@
     animation: gradient-animation 15s ease infinite;
   }
   .hero {
-    @apply flex flex-col-reverse w-full px-5;
+    @apply flex flex-col-reverse w-full px-5 mt-16;
     @apply md:container md:mx-auto md:px-2;
     @apply lg:flex-row lg:py-8 lg:items-center;
   }

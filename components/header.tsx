@@ -13,7 +13,7 @@ const Header = () => {
         </div>
         <div className="header-menu">
           {/* TODO update this menu to nav ul menu and fix border */}
-          <div className="border-b-2  border-white h-full">
+          <div className="border-b-2 border-white">
             <Link href="/" className="header-menu_item">
               {dataDesctopMenu.mainPage}
             </Link>
