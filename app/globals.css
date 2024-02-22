@@ -141,7 +141,7 @@
   }
 
   .hero-descrption {
-    @apply font-normal text-lg leading-8 rounded-md text-primary-foreground my-5 text-justify;
+    @apply font-normal text-xl leading-8 rounded-md text-primary-foreground my-5 text-justify;
   }
 
   .hero-button {
