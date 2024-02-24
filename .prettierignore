@@ -1,0 +1,3 @@
+*.md
+.next
+pnpm-lock.yaml

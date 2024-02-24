@@ -3,153 +3,154 @@
 @tailwind utilities;
 
 ::-webkit-scrollbar {
-  width: 6px;
+	width: 6px;
 }
 ::-webkit-scrollbar-track {
-  background: #d6d6d6;
+	background: #d6d6d6;
 }
 ::-webkit-scrollbar-thumb {
-  background: rgb(104, 65, 234);
-  border-radius: 5px;
+	background: rgb(104, 65, 234);
+	border-radius: 5px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: rgb(61, 39, 133);
+	background: rgb(61, 39, 133);
 }
 @keyframes gradient-animation {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 @layer base {
-  :root {
-    /* --background: #f7f7f7; */
-    --background: #F9F7FE;
-    /* --foreground: #232333; */
-    --foreground: #212B36;
-    --card: 0 0% 100%;
-    --card-foreground: 20 14.3% 4.1%;
-    --popover: 0 0% 100%;
-    --popover-foreground: 20 14.3% 4.1%;
-    /* --primary: rgb(255, 208, 37);#6E22AC */
-    --primary: rgb(33, 43, 54);
-    /* --primary: rgb(110, 34, 172); */
-    /* #212B36 */
-    --primary-foreground: #3c434d;
-    --text-color: rgb(245 245 244);
-    --secondary: 60 4.8% 95.9%;
-    --secondary-foreground: 24 9.8% 10%;
-    --muted: 60 4.8% 95.9%;
-    --muted-foreground: 25 5.3% 44.7%;
-    --accent: 60 4.8% 95.9%;
-    --accent-foreground: 24 9.8% 10%;
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 60 9.1% 97.8%;
-    --border: 20 5.9% 90%;
-    --input: 20 5.9% 90%;
-    --ring: 20 14.3% 4.1%;
-    --radius: 0.3rem;
-  }
+	:root {
+		/* --background: #f7f7f7; */
+		--background: #f9f7fe;
+		/* --foreground: #232333; */
+		--foreground: #212b36;
+		--card: 0 0% 100%;
+		--card-foreground: 20 14.3% 4.1%;
+		--popover: 0 0% 100%;
+		--popover-foreground: 20 14.3% 4.1%;
+		/* --primary: rgb(255, 208, 37);#6E22AC */
+		--primary: rgb(33, 43, 54);
+		/* --primary: rgb(110, 34, 172); */
+		/* #212B36 */
+		--primary-foreground: #3c434d;
+		--text-color: rgb(245 245 244);
+		--secondary: 60 4.8% 95.9%;
+		--secondary-foreground: 24 9.8% 10%;
+		--muted: 60 4.8% 95.9%;
+		--muted-foreground: 25 5.3% 44.7%;
+		--accent: 60 4.8% 95.9%;
+		--accent-foreground: 24 9.8% 10%;
+		--destructive: 0 84.2% 60.2%;
+		--destructive-foreground: 60 9.1% 97.8%;
+		--border: 20 5.9% 90%;
+		--input: 20 5.9% 90%;
+		--ring: 20 14.3% 4.1%;
+		--radius: 0.3rem;
+	}
 }
 @layer components {
-  .cu-bg-primary {
-    background-color: rgba(255, 212, 57, 0.8);
-  }
+	.cu-bg-primary {
+		background-color: rgba(255, 212, 57, 0.8);
+	}
 }
 @layer components {
-  .footer {
-    background: linear-gradient(
-      41deg,
-      #010101,
-      #220f4c,
-      #010101,
-      #220f4c,
-      #010101
-    );
-    background-size: 300% 300%;
-    animation: gradient-animation 15s ease infinite;
-    @apply text-primary-foreground;
-  }
-
+	.footer {
+		background: linear-gradient(
+			41deg,
+			#010101,
+			#220f4c,
+			#010101,
+			#220f4c,
+			#010101
+		);
+		background-size: 300% 300%;
+		animation: gradient-animation 15s ease infinite;
+		@apply text-primary-foreground;
+	}
 }
 
 @layer utilities {
+	.div-after::after {
+		content: '';
+		position: absolute;
+		/* top: 50px; */
+		/* right: -6px; */
+		width: 782px;
+		height: 701px;
+		border-radius: 782px;
+		background: radial-gradient(
+			50% 50% at 50% 50%,
+			rgba(104, 65, 234, 0.2) 0.01%,
+			rgba(104, 65, 234, 0.09) 100%
+		);
+		filter: blur(50px);
+	}
 
-  .div-after::after{
-    content: "";
-    position: absolute;
-    /* top: 50px; */
-    /* right: -6px; */
-    width: 782px;
-    height: 701px;
-    border-radius: 782px;
-    background: radial-gradient(50% 50% at 50% 50%,rgba(104,65,234,.2) .01%,rgba(104,65,234,.09) 100%);
-    filter: blur(50px);
-  }
-
-  .baf:after {
-    content: "";
-    width: calc(100% + 12px);
-    height: calc(100% + 12px);
-    border: 1px solid #6841ea;
-    opacity: .3;
-    position: absolute;
-    right: -6px;
-    top: -6px;
-    border-radius: 5px;
-}
-  .baf:before {
-    content: "";
-    width: calc(100% + 24px);
-    height: calc(100% + 24px);
-    border: 1px solid rgb(104, 65, 234);
-    opacity: .3;
-    position: absolute;
-    right: -12px;
-    top: -12px;
-    border-radius: 5px;
-}
-}
-
-@layer utilities {
-  .number-projects {
-    @apply flex flex-col justify-center w-52 rounded-md ml-2 text-slate-800/70;
-    @apply sm:justify-center sm:items-center;
-  }
-
-  .numbers {
-    @apply font-bold text-base;
-  }
-
-  .number-text {
-    @apply font-bold text-lg;
-  }
+	.baf:after {
+		content: '';
+		width: calc(100% + 12px);
+		height: calc(100% + 12px);
+		border: 1px solid #6841ea;
+		opacity: 0.3;
+		position: absolute;
+		right: -6px;
+		top: -6px;
+		border-radius: 5px;
+	}
+	.baf:before {
+		content: '';
+		width: calc(100% + 24px);
+		height: calc(100% + 24px);
+		border: 1px solid rgb(104, 65, 234);
+		opacity: 0.3;
+		position: absolute;
+		right: -12px;
+		top: -12px;
+		border-radius: 5px;
+	}
 }
 
 @layer utilities {
+	.number-projects {
+		@apply ml-2 flex w-52 flex-col justify-center rounded-md text-slate-800/70;
+		@apply sm:items-center sm:justify-center;
+	}
 
-  .hovered {
-    color: white;
-    background: linear-gradient(220.55deg, #6c638f 0%, #6c63ff 100%);
-  }
-  .services-bottom-item {
-    @apply hover:hovered flex flex-col justify-center  w-full h-52 rounded-xl bg-white;
-  }
+	.numbers {
+		@apply text-base font-bold;
+	}
 
-  .services-bottom-name {
-    @apply flex items-center font-bold text-xl mx-5;
-  }
+	.number-text {
+		@apply text-lg font-bold;
+	}
+}
 
-  .services-span {
-    @apply pr-3;
-  }
+@layer utilities {
+	.hovered {
+		color: white;
+		background: linear-gradient(220.55deg, #6c638f 0%, #6c63ff 100%);
+	}
+	.services-bottom-item {
+		@apply hover:hovered flex h-52 w-full  flex-col justify-center rounded-xl bg-white;
+	}
 
-  .services-bottom-title {
-    @apply text-sm m-5 leading-8;
-  }
+	.services-bottom-name {
+		@apply mx-5 flex items-center text-xl font-bold;
+	}
+
+	.services-span {
+		@apply pr-3;
+	}
+
+	.services-bottom-title {
+		@apply m-5 text-sm leading-8;
+	}
 }
