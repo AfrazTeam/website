@@ -28,13 +28,15 @@
 }
 @layer base {
   :root {
-    --background: #f7f7f7;
-    --foreground: #232333;
+    /* --background: #f7f7f7; */
+    --background: #F9F7FE;
+    /* --foreground: #232333; */
+    --foreground: #212B36;
     --card: 0 0% 100%;
     --card-foreground: 20 14.3% 4.1%;
     --popover: 0 0% 100%;
     --popover-foreground: 20 14.3% 4.1%;
-    --primary: #ffd439;
+    --primary: rgb(255, 212, 57);
     --primary-foreground: rgb(245 245 244);
     --text-color: rgb(245 245 244);
     --secondary: 60 4.8% 95.9%;
@@ -51,23 +53,29 @@
     --radius: 0.3rem;
   }
 }
-
-@layer utilities {
+@layer components {
   .header-main {
-    @apply  h-14 top-4 z-50 w-full flex absolute;
+    @apply  h-14 z-50 w-full flex fixed;
+  }
+  .cu-bg-primary {
+    background-color: rgba(255, 212, 57, 0.8);
   }
   .header-container {
-    @apply container mx-auto w-[90%] bg-primary px-5 flex justify-between items-center text-foreground rounded-full;
+    @apply transition-all container mx-auto w-[90%] bg-primary px-5 flex justify-between items-center text-foreground rounded-full;
     @apply md:container md:mx-auto md:justify-start;
     @apply sm:w-[90%];
-    @apply lg:w-[70%];
+    @apply lg:w-[80%];
   }
-
+  
+  .header-container-scroled {
+    @apply transition-all mx-auto w-full backdrop-blur-xl cu-bg-primary px-5 flex justify-between items-center text-foreground;
+    @apply md:mx-auto md:justify-start;
+  }
   .header-logo {
-    @apply w-52 flex-1;
+    @apply flex-1;
   }
   .header-logo_text {
-    @apply font-extrabold text-2xl;
+    @apply font-extrabold text-2xl block w-28;
   }
 
   .header-menu {
@@ -83,7 +91,7 @@
     @apply flex items-center;
   }
   .header-project-order_button {
-    @apply h-10 w-28 mx-3 rounded-md font-semibold text-sm text-primary-foreground bg-foreground;
+    @apply h-10 w-28 rounded-full font-semibold text-sm text-primary-foreground bg-foreground;
   }
 }
 @layer components {

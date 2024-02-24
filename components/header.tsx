@@ -1,13 +1,34 @@
+'use client'
 import { dataDesctopMenu } from '@/data/header'
 import { dataTextGeneral } from '@/data/text'
 import Link from 'next/link'
+import { useEffect, useState } from 'react'
 
 const Header = () => {
+  const [scroled, setScroled] = useState(false);
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 20) {
+        setScroled(true)
+      } else {
+        setScroled(false)
+      }
+    };
+    
+    window.addEventListener('scroll', handleScroll)
+  
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [scroled])
+  const marginTop = `${scroled ? "transition-all top-0" : "transition-all top-4"}`
+
   return (
-    <header className="header-main">
-      <div className="header-container">
+    <header className={ `header-main ${marginTop}`}>
+      {/* <div className={`header-container-scroled`}> */}
+      {/* <div className={`header-container`}> */}
+      <div className={`${scroled ? "header-container-scroled" : "header-container"}`}>
+      {/* <div className={`header-container ${scroled ? "backdrop-blur-md cu-bg-primary" : "bg-primary"}`}> */}
         <div className="header-logo">
-          <Link href="#" className="header-logo_text">
+          <Link href="/" className="header-logo_text">
             {dataDesctopMenu.name}
           </Link>
         </div>
@@ -30,11 +51,11 @@ const Header = () => {
         </div>
         <div className="header-project-order">
           <button className="header-project-order_button">
-            <Link href="https://t.me/SafariDeveloper/">
+            <Link href="/project-order" >
               {dataTextGeneral.projectOrder}
             </Link>
           </button>
-          <Link href="https://github.com/AfrazTeam/" className="">
+          <Link href="https://github.com/AfrazTeam/" className="hidden">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 72 72"
