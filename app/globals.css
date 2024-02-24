@@ -57,44 +57,8 @@
   }
 }
 @layer components {
-  .header-main {
-    @apply  h-16 z-50 w-full flex fixed;
-  }
   .cu-bg-primary {
     background-color: rgba(255, 212, 57, 0.8);
-  }
-  .header-container {
-    @apply transition-all container mx-auto w-[90%] px-5 flex justify-between items-center text-foreground rounded-full;
-    @apply md:container md:mx-auto md:justify-start;
-    @apply sm:w-[90%];
-    @apply lg:w-[80%];
-  }
-  
-  .header-container-scroled {
-    @apply transition-all mx-auto w-full backdrop-blur-xl bg-white/50 px-5 flex justify-between items-center text-foreground;
-    @apply md:mx-auto md:justify-start;
-  }
-  .header-logo {
-    @apply flex-1;
-  }
-  .header-logo_text {
-    @apply font-extrabold text-2xl block w-28;
-  }
-
-  .header-menu {
-    @apply hidden items-center w-[inherit];
-    @apply sm:hidden;
-    @apply lg:flex;
-  }
-  .header-menu_item {
-    @apply block text-center px-4 py-2 font-normal;
-  }
-
-  .header-project-order {
-    @apply flex items-center;
-  }
-  .header-project-order_button {
-    @apply h-10 w-28 rounded-full font-semibold text-sm text-[#6841ea] border border-[#6841ea];
   }
 }
 @layer components {
@@ -111,18 +75,11 @@
     animation: gradient-animation 15s ease infinite;
     @apply text-primary-foreground;
   }
-  .footer-main {
-    @apply mx-auto w-full max-w-screen-2xl p-4 py-6 lg:py-8;
-  }
-  .sub-footer {
-    @apply sm:flex sm:items-center sm:justify-between;
-  }
+
 }
 
 @layer utilities {
-  .hero-main {
-    @apply flex flex-col justify-center overflow-auto;
-  }
+
   .div-after::after{
     content: "";
     position: absolute;
@@ -134,39 +91,7 @@
     background: radial-gradient(50% 50% at 50% 50%,rgba(104,65,234,.2) .01%,rgba(104,65,234,.09) 100%);
     filter: blur(50px);
   }
-  .hero {
-    @apply flex flex-col-reverse w-full px-5 mt-16;
-    @apply md:container md:mx-auto md:px-28;
-    @apply lg:flex-row lg:py-8 lg:items-center;
-  }
 
-  .hero-box {
-    @apply flex flex-col justify-between text-center;
-    @apply lg:w-1/2 lg:h-[85%];
-  }
-  .hero-top-title {
-    @apply text-base mx-2 text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-purple-800 rounded-md px-2 my-5;
-  }
-  .hero-title {
-    @apply font-extrabold text-4xl leading-normal text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-purple-800 ;
-    @apply lg:text-start;
-  }
-
-  .hero-descrption {
-    @apply font-normal text-xl leading-8 rounded-md text-primary-foreground my-5 text-justify;
-  }
-
-  .hero-button {
-    @apply flex text-sm justify-center flex-col items-center;
-    @apply sm:flex-row;
-    @apply md:justify-start;
-  }
-
-  .hero-counseling {
-    @apply w-full h-16 rounded-md text-white mt-5 text-lg font-semibold bg-primary text-foreground;
-    @apply sm:ml-8;
-    @apply lg:w-60;
-  }
   .baf:after {
     content: "";
     width: calc(100% + 12px);
@@ -189,25 +114,9 @@
     top: -12px;
     border-radius: 5px;
 }
-  .hero-services {
-    @apply border-2 border-primary w-full h-16 rounded-md text-primary mt-5 font-semibold text-lg;
-    @apply lg:w-40;
-  }
-
-  .hero-svg {
-    @apply m-10 items-center;
-    @apply sm:flex sm:justify-center;
-    @apply lg:justify-end lg:w-1/2;
-  }
 }
 
 @layer utilities {
-  .number-project-main {
-    @apply flex flex-col-reverse justify-center;
-    @apply sm:flex-row-reverse;
-    @apply xl:justify-end;
-  }
-
   .number-projects {
     @apply flex flex-col justify-center w-52 rounded-md ml-2 text-slate-800/70;
     @apply sm:justify-center sm:items-center;
@@ -223,39 +132,7 @@
 }
 
 @layer utilities {
-  .services-main {
-    @apply flex flex-col-reverse w-full px-5;
-    /* @apply md:container md:mx-auto; */
-    @apply md:container md:mx-auto md:px-28;
 
-  }
-  .services {
-    @apply my-28 flex flex-col;
-  }
-
-  .services-top {
-    @apply flex flex-col-reverse justify-between items-center bg-white py-10 my-10 rounded-lg;
-    @apply lg:flex-row;
-  }
-
-  .services-top-item {
-    @apply relative;
-    @apply lg:bottom-10;
-  }
-
-  .services-text {
-    @apply flex items-center font-extrabold text-2xl text-primary-foreground;
-  }
-
-  .services-title {
-    @apply text-gray-600 mt-5 leading-8;
-  }
-
-  .services-bottom {
-    @apply text-[#4a4b4b] grid grid-cols-1 place-items-center gap-8 mb-16;
-    @apply md:grid-cols-2;
-    @apply lg:grid-cols-3;
-  }
   .hovered {
     color: white;
     background: linear-gradient(220.55deg, #6c638f 0%, #6c63ff 100%);

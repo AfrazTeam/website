@@ -5,7 +5,7 @@ import { MaskHappy, NewTeamProject, TodoDone } from './icons'
 
 const CounterProjects = () => {
   return (
-    <div className="number-project-main my-6">
+    <div className="xl:justify-end sm:flex-row-reverse flex flex-col-reverse justify-center my-6">
       <div className="number-projects satisfied-customers">
         <div className="flex items-center">
           <MaskHappy width="30" height="30" />

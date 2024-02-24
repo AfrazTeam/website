@@ -22,35 +22,32 @@ const Header = () => {
   const marginTop = `${scroled ? "transition-all top-0" : "transition-all top-0"}`
 
   return (
-    <header className={ `header-main ${marginTop}`}>
-      {/* <div className={`header-container-scroled`}> */}
-      {/* <div className={`header-container`}> */}
-      <div className={`${scroled ? "header-container-scroled" : "header-container"}`}>
-      {/* <div className={`header-container ${scroled ? "backdrop-blur-md cu-bg-primary" : "bg-primary"}`}> */}
-        <div className="header-logo">
-          <Link href="/" className="header-logo_text">
+    <header className={ `h-16 z-50 w-full flex fixed ${marginTop}`}>
+      <div className={`${scroled ? "md:mx-auto md:justify-start transition-all mx-auto w-full backdrop-blur-xl bg-white/50 px-5 flex justify-between items-center text-foreground" : "lg:w-[80%]sm:w-[90%] md:container md:mx-auto md:justify-start transition-all container mx-auto w-[90%] px-5 flex justify-between items-center text-foreground rounded-full"}`}>
+        <div className="flex-1">
+          <Link href="/" className="font-extrabold text-2xl block w-28">
             {dataDesctopMenu.name}
           </Link>
         </div>
-        <div className="header-menu">
+        <div className="sm:hidden lg:flex hidden items-center w-[inherit]">
           {/* TODO update this menu to nav ul menu and fix border */}
           <div className="">
-            <Link href="/" className="header-menu_item bg-slate-200/80 rounded-lg">
+            <Link href="/" className="block text-center px-4 py-2 font-normal bg-slate-200/80 rounded-lg">
               {dataDesctopMenu.mainPage}
             </Link>
           </div>
-          <Link href="/" className="header-menu_item">
+          <Link href="/" className="block text-center px-4 py-2 font-normal">
             {dataDesctopMenu.projects}
           </Link>
-          <Link href="/" className="header-menu_item">
+          <Link href="/" className="block text-center px-4 py-2 font-normal">
             {dataDesctopMenu.weblog}
           </Link>
-          <Link href="/" className="header-menu_item">
+          <Link href="/" className="block text-center px-4 py-2 font-normal">
             {dataDesctopMenu.about}
           </Link>
         </div>
-        <div className="header-project-order">
-          <button className="header-project-order_button">
+        <div className="flex items-center">
+          <button className="h-10 w-28 rounded-full font-semibold text-sm text-[#6841ea] border border-[#6841ea]">
             <Link href="/project-order" >
               {dataTextGeneral.projectOrder}
             </Link>
