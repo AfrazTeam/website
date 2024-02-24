@@ -1,14 +1,13 @@
-import Image from 'next/image';
-import Link from 'next/link';
-import React from 'react';
-import { dataTextGeneral } from '@/data/text';
 import CounterProjects from '@/components/counterProjects';
 import { HeroBottom } from '@/components/svgs';
+import { dataTextGeneral } from '@/data/text';
+import Image from 'next/image';
+import Link from 'next/link';
 
 const HeroButtuns = () => {
 	return (
 		<div className="flex flex-col items-center justify-center text-sm sm:flex-row md:justify-start">
-			<button className="baf relative mt-5 h-16 w-full rounded-md bg-primary text-lg font-semibold text-foreground text-white text-white sm:ml-8 lg:w-60">
+			<button className="baf relative mt-5 h-16 w-full rounded-md bg-primary text-lg font-semibold text-foreground text-white sm:ml-8 lg:w-60">
 				<Link href="https://t.me/SafariDeveloper/" className="text-white ">
 					{dataTextGeneral.counseling}
 				</Link>
