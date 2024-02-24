@@ -19,7 +19,7 @@ const Header = () => {
   
     return () => window.removeEventListener('scroll', handleScroll)
   }, [scroled])
-  const marginTop = `${scroled ? "transition-all top-0" : "transition-all top-4"}`
+  const marginTop = `${scroled ? "transition-all top-0" : "transition-all top-0"}`
 
   return (
     <header className={ `header-main ${marginTop}`}>
@@ -34,8 +34,8 @@ const Header = () => {
         </div>
         <div className="header-menu">
           {/* TODO update this menu to nav ul menu and fix border */}
-          <div className="border-b-2 border-white">
-            <Link href="/" className="header-menu_item">
+          <div className="">
+            <Link href="/" className="header-menu_item bg-slate-200/80 rounded-lg">
               {dataDesctopMenu.mainPage}
             </Link>
           </div>

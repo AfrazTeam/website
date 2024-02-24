@@ -8,8 +8,8 @@ import { HeroBottom } from '@/components/svgs'
 const HeroButtuns = () => {
   return (
     <div className="hero-button">
-      <button className="hero-counseling">
-        <Link href="https://t.me/SafariDeveloper/">
+      <button className="hero-counseling text-white baf relative">
+        <Link href="https://t.me/SafariDeveloper/" className='text-white '>
           {dataTextGeneral.counseling}
         </Link>
       </button>
@@ -43,7 +43,7 @@ const HeroImage = () => {
   return (
     <div className="hero-svg animate__animated animate__zoomIn">
       <Image
-        className="drop-shadow-[0_30px_30px_rgba(97,79,30,0.90)]"
+        className=""
         src="/svgs/standup-meeting-not-css.svg"
         width={620}
         height={500}
@@ -61,6 +61,9 @@ const Hero = () => {
           <CounterProjects />
           <HeroButtuns />
         </div>
+        <div className='relative'>
+          <div className="absolute w-782 h-701 rounded-full bg-gradient-to-br from-purple-500 to-purple-900 filter blur-3xl"></div>
+      </div>
         <HeroImage />
       </div>
       <HeroBottom width="100%" height="100" />
