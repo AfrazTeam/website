@@ -1,7 +1,5 @@
 import { dataTextGeneral } from '@/data/text';
-import React from 'react';
-import Image from 'next/image';
-import { MaskHappy, NewTeamProject, TodoDone } from './icons';
+import { MaskHappy, TodoDone } from './icons';
 
 const CounterProjects = () => {
 	return (

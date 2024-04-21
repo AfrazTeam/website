@@ -5,27 +5,28 @@ import Link from 'next/link';
 import { useEffect, useState } from 'react';
 
 const Header = () => {
-	const [scroled, setScroled] = useState(false);
+	const [scrolled, setScrolled] = useState(false);
 	useEffect(() => {
 		const handleScroll = () => {
 			if (window.scrollY > 20) {
-				setScroled(true);
+				setScrolled(true);
 			} else {
-				setScroled(false);
+				setScrolled(false);
 			}
 		};
 
 		window.addEventListener('scroll', handleScroll);
 
 		return () => window.removeEventListener('scroll', handleScroll);
-	}, [scroled]);
-	const marginTop = `${scroled ? 'transition-all top-0' : 'transition-all top-0'}`;
+	}, [scrolled]);
+
+	const containerClass = `flex items-center justify-between text-foreground transition-all md:justify-start ${
+		scrolled ? 'w-full bg-white/50 backdrop-blur-xl px-10' : 'container w-full'
+	}`;
 
 	return (
-		<header className={`fixed z-50 flex h-16 w-full ${marginTop}`}>
-			<div
-				className={`${scroled ? 'mx-auto flex w-full items-center justify-between bg-white/50 px-5 text-foreground backdrop-blur-xl transition-all md:mx-auto md:justify-start' : 'lg:w-[80%]sm:w-[90%] container mx-auto flex w-[90%] items-center justify-between rounded-full px-5 text-foreground transition-all md:container md:mx-auto md:justify-start'}`}
-			>
+		<header className={`fixed top-0 z-50 flex h-16 w-full`}>
+			<div className={containerClass}>
 				<div className="flex-1">
 					<Link href="/" className="block w-28 text-2xl font-extrabold">
 						{dataDesctopMenu.name}

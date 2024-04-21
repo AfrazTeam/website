@@ -1,7 +1,4 @@
-import React from 'react';
-import Image from 'next/image';
 import { dataTextGeneral } from '@/data/text';
-import { dataTeammates } from '@/data/users';
 
 const Teammates = () => {
 	return (

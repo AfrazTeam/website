@@ -1,5 +1,4 @@
-import { inter, yekanBakh } from '@/app/fonts';
-import { HTMLAttributes, ReactNode } from 'react';
+import { HTMLAttributes } from 'react';
 
 interface SpaseFromHeaderProps extends HTMLAttributes<HTMLDivElement> {}
 
@@ -21,7 +20,7 @@ export default function ProjectOrder() {
 	}
 	return (
 		<SpaseFromHeader>
-			<div className="container mx-auto flex flex-col items-center justify-center py-8">
+			<div className="mx-auto flex flex-col items-center justify-center py-8 lg:container">
 				<h1>سفارش پروژه</h1>
 				<form className="mt-10 w-full max-w-lg" action={createProjectOrder}>
 					<div className="-mx-3 mb-6 flex flex-wrap">
@@ -39,7 +38,6 @@ export default function ProjectOrder() {
 								type="text"
 								placeholder="احسان صفری"
 							/>
-							{/* <p className="text-red-500 text-xs italic">لطفا مشخصات ضروری را وارد کنید</p> */}
 						</div>
 						<div className="w-full px-3 md:w-1/2">
 							<label

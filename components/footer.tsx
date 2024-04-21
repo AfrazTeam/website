@@ -1,15 +1,16 @@
 const Footer = () => {
 	return (
-		<footer className="footer">
-			<div className="mx-auto w-full max-w-screen-2xl p-4 py-6 lg:py-8">
+		// <footer className="h-96">
+		<footer>
+			<div className="container w-full p-4 py-6 text-sm lg:py-8">
 				<div className="md:flex md:justify-between">
 					<div className="mb-6 md:mb-0">
-						<a href="https://afrazteam.ir/" className="flex items-center">
+						<a href="https://afrazteam.ir/" className="mb-6 items-center">
 							<span className="whitespace-nowrap text-2xl font-semibold text-primary">
 								تیم برنامه نویسی افراز تیم
 							</span>
 						</a>
-						<p className="mt-3 max-w-lg">
+						<p className="mt-3 max-w-lg text-gray-700">
 							تیم برنامه‌نویسی ما با ارائه‌ی خدمات کامل و تخصصی، ایده‌های
 							خلاقانه و نوآورانه‌تان را به واقعیت تبدیل می‌کند. از طراحی
 							نرم‌افزارهای سفارشی تا ایجاد وبسایت‌های پویا و اپلیکیشن‌های
@@ -18,13 +19,36 @@ const Footer = () => {
 							برسیم.
 						</p>
 					</div>
-					<div className="grid grid-cols-2 gap-8 sm:grid-cols-3 sm:gap-6">
+					<div className="grid grid-cols-2 gap-8 sm:grid-cols-4 sm:gap-6">
+						<div>
+							<h2 className="mb-6 text-sm font-semibold  text-gray-400">
+								تماس با ما
+							</h2>
+							<ul className=" font-medium">
+								<li className="mb-4">
+									<a
+										href="https://afrazteam.ir/"
+										className="hover:text-primary hover:underline"
+									>
+										09145458392
+									</a>
+								</li>
+								<li className="mb-4">
+									<a
+										href="https://afrazteam.ir/"
+										className="hover:text-primary hover:underline"
+									>
+										آذربایجان غربی، مهاباد
+									</a>
+								</li>
+							</ul>
+						</div>
 						<div>
 							<h2 className="mb-6 text-sm font-semibold  text-gray-400">
 								پیوند های مهم
 							</h2>
 							<ul className=" font-medium">
-								<li>
+								<li className="mb-4">
 									<a
 										href="https://afrazteam.ir/"
 										className="hover:text-primary hover:underline"
@@ -59,17 +83,27 @@ const Footer = () => {
 						</div>
 						<div>
 							<h2 className="mb-6 text-sm font-semibold text-gray-400">
-								خدمات
+								خدمات ما
 							</h2>
 							<ul className="  font-medium">
 								<li className="mb-4">
 									<a href="#" className="hover:text-primary hover:underline ">
-										خدمات ما
+										طراحی سایت
 									</a>
 								</li>
-								<li>
+								<li className="mb-4">
 									<a href="#" className="hover:text-primary hover:underline">
-										نمونه کار ها
+										تولید نرم‌افزار
+									</a>
+								</li>
+								<li className="mb-4">
+									<a href="#" className="hover:text-primary hover:underline">
+										برنامه نویسی موبایل
+									</a>
+								</li>
+								<li className="mb-4">
+									<a href="#" className="hover:text-primary hover:underline">
+										توسعه کسب و کار
 									</a>
 								</li>
 							</ul>

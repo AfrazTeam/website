@@ -139,11 +139,10 @@
 		background: linear-gradient(220.55deg, #6c638f 0%, #6c63ff 100%);
 	}
 	.services-bottom-item {
-		@apply hover:hovered flex h-52 w-full  flex-col justify-center rounded-xl bg-white;
+		@apply hover:hovered flex h-auto w-full  flex-col py-8 rounded-xl bg-white shadow;
 	}
-
 	.services-bottom-name {
-		@apply mx-5 flex items-center text-xl font-bold;
+		@apply mx-5 flex items-center text-xl font-bold mb-4;
 	}
 
 	.services-span {
@@ -151,6 +150,6 @@
 	}
 
 	.services-bottom-title {
-		@apply m-5 text-sm leading-8;
+		@apply text-base leading-8 px-10 mt-6;
 	}
 }

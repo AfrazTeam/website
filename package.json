@@ -22,7 +22,7 @@
 			"pre-commit": "lint-staged"
 		}
 	},
-		"lint-staged": {
+	"lint-staged": {
 		"*.{ts,tsx}": [
 			"prettier --write .",
 			"eslint --fix ."

@@ -2,7 +2,7 @@ interface iDataHeader {
 	[key: string]: string;
 }
 
-let dataDesctopMenu = {
+const dataDesctopMenu = {
 	name: 'افراز تیم',
 	mainPage: 'صفحه اصلی',
 	projects: 'پروژه ها',

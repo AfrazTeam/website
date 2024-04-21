@@ -12,9 +12,14 @@ const HeroButtuns = () => {
 					{dataTextGeneral.counseling}
 				</Link>
 			</button>
-			<button className="mt-5 h-16 w-full rounded-md border-2 border-primary text-lg font-semibold text-primary lg:w-40">
-				<Link href="/">{dataTextGeneral.ourservices}</Link>
-			</button>
+			{/* <button className="mt-5 h-16 w-full rounded-md border-2 border-primary text-lg font-semibold text-primary lg:w-40"> */}
+			<Link
+				href="#services"
+				className="mt-5 flex h-16 w-full items-center justify-center rounded-md border-2 border-primary text-lg font-semibold text-primary lg:w-40"
+			>
+				{dataTextGeneral.ourservices}
+			</Link>
+			{/* </button> */}
 		</div>
 	);
 };
@@ -58,7 +63,7 @@ const HeroImage = () => {
 const Hero = () => {
 	return (
 		<div className="flex flex-col justify-center overflow-auto">
-			<div className="mt-16 flex w-full flex-col-reverse px-5 md:container md:mx-auto md:px-28 lg:flex-row lg:items-center lg:py-8">
+			<div className="container mx-auto mt-16 flex w-full flex-col-reverse lg:flex-row lg:items-center lg:py-8">
 				<div className="flex flex-col justify-between text-center lg:h-[85%] lg:w-1/2">
 					<HeroDescriptions />
 					<CounterProjects />

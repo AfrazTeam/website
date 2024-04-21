@@ -2,7 +2,7 @@ interface iDataText {
 	[key: string]: string;
 }
 
-let dataTextGeneral: iDataText = {
+const dataTextGeneral: iDataText = {
 	group: 'افزار تیم  نیروی خلاق در زمینه ی برنامه نویسی و توسعه کسب و کار  ',
 	title:
 		// 'ایده های خود را با خدمات کامل تیم برنامه نویسی ما به واقعیت تبدیل کنید.',
@@ -14,15 +14,15 @@ let dataTextGeneral: iDataText = {
 	counseling: 'مشاوره تخصصی',
 	ourservices: 'خدمات ما',
 	afrazteam: 'افراز تیم ',
-	NumberOngoinProjects: '2',
+	NumberOngoinProjects: '9',
 	inProgressProjects: 'مشتریان',
-	NumberSatisfiedCustomers: '5',
+	NumberSatisfiedCustomers: '9',
 	SatisfiedCustomers: 'رضایت مشتریان',
-	NumberCompletedProjects: '4',
+	NumberCompletedProjects: '15',
 	CompletedProjects: 'پروژه های تکمیل شده',
 	services: 'خدماتی که به شما ارائه میدهیم',
 	titleServices:
-		'در افراز تیم همه یافته های جدید در حوزه تکنولوژی را با دقت دنبال میکنیم و از بهترین ابزارها و روش های روز استفاده میکنیم تا به شما در دستیابی به اهدافتان کمک کنیم.با ما همراه شوید و تجربه ای منحصر به فرد در دنیای دیجیتال را تجربه کنید.',
+		'در تیم ما، به دنبال جدیدترین پیشرفت‌ها و تکنولوژی‌های روز در حوزه‌ی برنامه‌نویسی و توسعه کسب و کار هستیم. ما با استفاده از بهترین ابزارها و روش‌های به روز، به شما کمک می‌کنیم تا به اهداف خود دست یابید. با ما همراه شوید و تجربه‌ای جذاب و فراتر از انتظار در دنیای دیجیتال را تجربه کنید',
 	appMobile: 'برنامه های موبایل',
 	appMobileTitle:
 		'طراحی و کدنویسی نرم افزار های آندروید فروشگاهی،خبری و نرم افزار های کاربردی',
@@ -39,7 +39,7 @@ let dataTextGeneral: iDataText = {
 	businessDevelopmentTitle:
 		'ارائه راه حل های نوین برای توسعه کسب و کارهای شخصی، شرکتی و سازمان ها',
 	professionalSupport: 'پشتیبانی حرفه ای',
-	professionalSupportTitle: 'تمام محصولات ما پشتیبانی رایگان یک ساله دارند',
+	professionalSupportTitle: 'تمام محصولات ما پشتیبانی رایگان 3 ماهه دارند',
 } satisfies iDataText;
 
 export { dataTextGeneral };

@@ -6,7 +6,14 @@ module.exports = {
 		'./components/**/*.{js,ts,jsx,tsx,mdx}',
 		'./app/**/*.{js,ts,jsx,tsx,mdx}',
 	],
+	corePlugins: {
+		container: false,
+	},
 	theme: {
+		container: {
+			center: true,
+			padding: '7rem',
+		},
 		extend: {
 			fontFamily: {
 				'yekan-bakh': 'var(--yekan-bakh)',
@@ -21,5 +28,30 @@ module.exports = {
 			},
 		},
 	},
-	plugins: [],
+	plugins: [
+		function ({ addComponents }) {
+			addComponents({
+				'.container': {
+					maxWidth: '100%',
+					marginLeft: 'auto',
+					marginRight: 'auto',
+					padding: '0 1.5rem 0',
+					'@screen sm': {
+						maxWidth: '640px',
+					},
+					'@screen md': {
+						maxWidth: '768px',
+						padding: '0 3rem 0',
+					},
+					'@screen lg': {
+						maxWidth: '1280px',
+						padding: '0 7rem 0',
+					},
+					'@screen xl': {
+						maxWidth: '1400px',
+					},
+				},
+			})
+		},
+	],
 }
