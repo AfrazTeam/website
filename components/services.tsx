@@ -25,58 +25,58 @@ const Services = () => {
 					</div>
 				</div>
 				<div className="mb-16 grid grid-cols-1 gap-8 text-[#4a4b4b] sm:grid-cols-2 ">
-					<div className="services-bottom-item">
-						<div className="services-bottom-name">
+					<div className="hover:hovered flex h-auto w-full  flex-col rounded-xl bg-white py-8 shadow">
+						<div className="mx-5 mb-4 flex items-center text-xl font-bold">
 							<Image src="svgs/svg6.svg" width={40} height={30} alt="svg1" />
-							<span className="services-span">{dataTextGeneral.appMobile}</span>
+							<span className="pr-3">{dataTextGeneral.appMobile}</span>
 						</div>
 						<hr className="border-1 w-[90%] place-self-center" />
-						<p className="services-bottom-title">
+						<p className="mt-6 px-10 text-base leading-8">
 							{dataTextGeneral.appMobileTitle}
 						</p>
 					</div>
 					{/* <div className="services-bottom-item">
 						<div className="services-bottom-name">
 							<Image src="svgs/svg2.svg" width={40} height={30} alt="svg1" />
-							<span className="services-span">
+							<span className="pr-3">
 								{dataTextGeneral.telegramBot}
 							</span>
 						</div>
-						<p className="services-bottom-title">
+						<p className="mt-6 px-10 text-base leading-8">
 							{dataTextGeneral.telegranBotTitle}
 						</p>
 					</div> */}
-					<div className="services-bottom-item">
-						<div className="services-bottom-name">
+					<div className="hover:hovered flex h-auto w-full  flex-col rounded-xl bg-white py-8 shadow">
+						<div className="mx-5 mb-4 flex items-center text-xl font-bold">
 							<Image src="svgs/svg1.svg" width={40} height={30} alt="svg1" />
-							<span className="services-span">{dataTextGeneral.webDesign}</span>
+							<span className="pr-3">{dataTextGeneral.webDesign}</span>
 						</div>
 						<hr className="border-1 w-[90%] place-self-center" />
-						<p className="services-bottom-title">
+						<p className="mt-6 px-10 text-base leading-8">
 							{dataTextGeneral.webDesignTitle}
 						</p>
 					</div>
-					<div className="services-bottom-item">
-						<div className="services-bottom-name">
+					<div className="hover:hovered flex h-auto w-full  flex-col rounded-xl bg-white py-8 shadow">
+						<div className="mx-5 mb-4 flex items-center text-xl font-bold">
 							<Image src="svgs/svg3.svg" width={40} height={30} alt="svg1" />
-							<span className="services-span">
+							<span className="pr-3">
 								{dataTextGeneral.teachingProgramming}
 							</span>
 						</div>
 						<hr className="border-1 w-[90%] place-self-center" />
-						<p className="services-bottom-title">
+						<p className="mt-6 px-10 text-base leading-8">
 							{dataTextGeneral.teachingProgrammingTitle}
 						</p>
 					</div>
-					<div className="services-bottom-item">
-						<div className="services-bottom-name">
+					<div className="hover:hovered flex h-auto w-full  flex-col rounded-xl bg-white py-8 shadow">
+						<div className="mx-5 mb-4 flex items-center text-xl font-bold">
 							<Image src="svgs/svg4.svg" width={40} height={30} alt="svg1" />
-							<span className="services-span">
+							<span className="pr-3">
 								{dataTextGeneral.businessDevelopment}
 							</span>
 						</div>
 						<hr className="border-1 w-[90%] place-self-center" />
-						<p className="services-bottom-title">
+						<p className="mt-6 px-10 text-base leading-8">
 							{dataTextGeneral.businessDevelopmentTitle}
 						</p>
 					</div>

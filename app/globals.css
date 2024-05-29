@@ -123,18 +123,4 @@
 		color: white;
 		background: linear-gradient(220.55deg, #6c638f 0%, #6c63ff 100%);
 	}
-	.services-bottom-item {
-		@apply hover:hovered flex h-auto w-full  flex-col rounded-xl bg-white py-8 shadow;
-	}
-	.services-bottom-name {
-		@apply mx-5 mb-4 flex items-center text-xl font-bold;
-	}
-
-	.services-span {
-		@apply pr-3;
-	}
-
-	.services-bottom-title {
-		@apply mt-6 px-10 text-base leading-8;
-	}
 }
