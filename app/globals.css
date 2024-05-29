@@ -119,21 +119,6 @@
 }
 
 @layer utilities {
-	.number-projects {
-		@apply ml-2 flex w-52 flex-col justify-center rounded-md text-slate-800/70;
-		@apply sm:items-center sm:justify-center;
-	}
-
-	.numbers {
-		@apply text-base font-bold;
-	}
-
-	.number-text {
-		@apply text-lg font-bold;
-	}
-}
-
-@layer utilities {
 	.hovered {
 		color: white;
 		background: linear-gradient(220.55deg, #6c638f 0%, #6c63ff 100%);
