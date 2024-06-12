@@ -1,10 +1,36 @@
+import Link from 'next/link';
+import Image from 'next/image';
+import { FaFacebook } from 'react-icons/fa';
+import { FaInstagram } from 'react-icons/fa';
+import { TiSocialTwitter } from 'react-icons/ti';
+import { FaGithub } from 'react-icons/fa';
+
+const SocailIcons = () => {
+	return (
+		<div className="mt-8 flex space-x-6 space-x-reverse">
+			<Link className=" text-2xl text-blue-700 " href="/">
+				<FaFacebook />
+			</Link>
+			<Link className="text-2xl text-orange-700 " href="/">
+				<FaInstagram />
+			</Link>
+			<Link className="text-2xl text-sky-700 " href="/">
+				<TiSocialTwitter />
+			</Link>
+			<Link className="text-2xl " href="/">
+				<FaGithub />
+			</Link>
+		</div>
+	);
+};
+
 const Footer = () => {
 	return (
 		// <footer className="h-96">
 		<footer>
-			<div className="container w-full p-4 py-6 text-sm lg:py-8">
+			<div className="container w-full py-6 text-sm lg:py-8">
 				<div className="md:flex md:justify-between">
-					<div className="mb-6 md:mb-0">
+					<div className="mb-6 w-1/2 md:mb-0">
 						<a href="https://afrazteam.ir/" className="mb-6 items-center">
 							<span className="whitespace-nowrap text-2xl font-semibold text-primary">
 								تیم برنامه نویسی افراز تیم
@@ -18,8 +44,11 @@ const Footer = () => {
 							داشته و در ارتباط مستمر با شما خواهیم بود تا به بهترین نتیجه
 							برسیم.
 						</p>
+						<div>
+							<SocailIcons />
+						</div>
 					</div>
-					<div className="grid grid-cols-2 gap-8 sm:grid-cols-4 sm:gap-6">
+					<div className="grid w-1/2 grid-cols-2 gap-8 sm:grid-cols-4 sm:gap-6">
 						<div>
 							<h2 className="mb-6 text-sm font-semibold  text-gray-400">
 								تماس با ما
@@ -107,10 +136,18 @@ const Footer = () => {
 									</a>
 								</li>
 							</ul>
+						</div>{' '}
+						<div>
+							<Image
+								src="/images/AfrazTeam.png"
+								width={300}
+								height={200}
+								alt="afrazteam"
+							/>
 						</div>
 					</div>
 				</div>
-				<hr className="my-6 border-primary sm:mx-auto lg:my-8" />
+				{/* <hr className="my-6 border-primary sm:mx-auto lg:my-8" />
 				<div className="sm:flex sm:items-center sm:justify-between">
 					<span className="text-sm sm:text-center">
 						© 2023{' '}
@@ -140,7 +177,7 @@ const Footer = () => {
 							<span className="sr-only">GitHub account</span>
 						</a>
 					</div>
-				</div>
+				</div> */}
 			</div>
 		</footer>
 	);
