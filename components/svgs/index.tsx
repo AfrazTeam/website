@@ -1,3 +1,3 @@
-import { HeroBottom } from './heroBottom'
+import { HeroBottom } from './heroBottom';
 
-export { HeroBottom }
+export { HeroBottom };

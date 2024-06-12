@@ -3,238 +3,124 @@
 @tailwind utilities;
 
 ::-webkit-scrollbar {
-  width: 6px;
+	width: 6px;
 }
 ::-webkit-scrollbar-track {
-  background: #d6d6d6;
+	background: #d6d6d6;
 }
 ::-webkit-scrollbar-thumb {
-  background: #ffd439;
-  border-radius: 5px;
+	background: rgb(104, 65, 234);
+	border-radius: 5px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #ffc800;
+	background: rgb(61, 39, 133);
 }
 @keyframes gradient-animation {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 @layer base {
-  :root {
-    --background: #f7f7f7;
-    --foreground: #232333;
-    --card: 0 0% 100%;
-    --card-foreground: 20 14.3% 4.1%;
-    --popover: 0 0% 100%;
-    --popover-foreground: 20 14.3% 4.1%;
-    --primary: #ffd439;
-    --primary-foreground: rgb(245 245 244);
-    --text-color: rgb(245 245 244);
-    --secondary: 60 4.8% 95.9%;
-    --secondary-foreground: 24 9.8% 10%;
-    --muted: 60 4.8% 95.9%;
-    --muted-foreground: 25 5.3% 44.7%;
-    --accent: 60 4.8% 95.9%;
-    --accent-foreground: 24 9.8% 10%;
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 60 9.1% 97.8%;
-    --border: 20 5.9% 90%;
-    --input: 20 5.9% 90%;
-    --ring: 20 14.3% 4.1%;
-    --radius: 0.3rem;
-  }
-}
-
-@layer utilities {
-  .header-main {
-    @apply bg-primary h-16 sticky top-0 z-50 w-full px-2 flex;
-  }
-  .header-container {
-    @apply w-full flex justify-between items-center text-foreground;
-    @apply md:container md:mx-auto md:justify-start;
-  }
-
-  .header-logo {
-    @apply w-52;
-  }
-  .header-logo_text {
-    @apply font-extrabold text-3xl;
-  }
-
-  .header-menu {
-    @apply hidden items-center w-[inherit];
-    @apply md:flex;
-  }
-  .header-menu_item {
-    @apply block text-center px-5 py-5 font-normal;
-  }
-
-  .header-project-order {
-    @apply flex items-center;
-  }
-  .header-project-order_button {
-    @apply h-10 w-28 mx-3 rounded-md font-semibold text-sm text-primary-foreground bg-foreground;
-  }
+	:root {
+		/* --background: #f7f7f7; */
+		--background: #f9f7fe;
+		/* --foreground: #232333; */
+		--foreground: #212b36;
+		--card: 0 0% 100%;
+		--card-foreground: 20 14.3% 4.1%;
+		--popover: 0 0% 100%;
+		--popover-foreground: 20 14.3% 4.1%;
+		/* --primary: rgb(255, 208, 37);#6E22AC */
+		--primary: rgb(33, 43, 54);
+		/* --primary: rgb(110, 34, 172); */
+		/* #212B36 */
+		--primary-foreground: #3c434d;
+		--text-color: rgb(245 245 244);
+		--secondary: 60 4.8% 95.9%;
+		--secondary-foreground: 24 9.8% 10%;
+		--muted: 60 4.8% 95.9%;
+		--muted-foreground: 25 5.3% 44.7%;
+		--accent: 60 4.8% 95.9%;
+		--accent-foreground: 24 9.8% 10%;
+		--destructive: 0 84.2% 60.2%;
+		--destructive-foreground: 60 9.1% 97.8%;
+		--border: 20 5.9% 90%;
+		--input: 20 5.9% 90%;
+		--ring: 20 14.3% 4.1%;
+		--radius: 0.3rem;
+	}
 }
 @layer components {
-  .footer {
-    background: linear-gradient(
-      41deg,
-      #010101,
-      #220f4c,
-      #010101,
-      #220f4c,
-      #010101
-    );
-    background-size: 300% 300%;
-    animation: gradient-animation 15s ease infinite;
-    @apply text-primary-foreground;
-  }
-  .footer-main {
-    @apply mx-auto w-full max-w-screen-2xl p-4 py-6 lg:py-8;
-  }
-  .sub-footer {
-    @apply sm:flex sm:items-center sm:justify-between;
-  }
+	.cu-bg-primary {
+		background-color: rgba(255, 212, 57, 0.8);
+	}
+}
+@layer components {
+	.footer {
+		background: linear-gradient(
+			41deg,
+			#010101,
+			#220f4c,
+			#010101,
+			#220f4c,
+			#010101
+		);
+		background-size: 300% 300%;
+		animation: gradient-animation 15s ease infinite;
+		@apply text-primary-foreground;
+	}
 }
 
 @layer utilities {
-  .hero-main {
-    @apply flex flex-col justify-center overflow-auto;
-    background: linear-gradient(
-      41deg,
-      #010101,
-      #220f4c,
-      #010101,
-      #220f4c,
-      #010101
-    );
-    background-size: 300% 300%;
-    animation: gradient-animation 15s ease infinite;
-  }
-  .hero {
-    @apply flex flex-col-reverse w-full px-5;
-    @apply md:container md:mx-auto md:px-2;
-    @apply lg:flex-row lg:py-8 lg:items-center;
-  }
+	.div-after::after {
+		content: '';
+		position: absolute;
+		/* top: 50px; */
+		/* right: -6px; */
+		width: 782px;
+		height: 701px;
+		border-radius: 782px;
+		background: radial-gradient(
+			50% 50% at 50% 50%,
+			rgba(104, 65, 234, 0.2) 0.01%,
+			rgba(104, 65, 234, 0.09) 100%
+		);
+		filter: blur(50px);
+	}
 
-  .hero-box {
-    @apply flex flex-col justify-between text-center;
-    @apply lg:w-1/2 lg:h-[85%];
-  }
-  .hero-top-title {
-    @apply text-base mx-2 text-primary rounded-md px-2 my-5;
-  }
-  .hero-title {
-    @apply font-extrabold text-4xl leading-normal text-primary;
-    @apply lg:text-start;
-  }
-
-  .hero-descrption {
-    @apply font-normal text-lg leading-8 rounded-md text-primary-foreground my-5 text-justify;
-  }
-
-  .hero-button {
-    @apply flex text-sm justify-center flex-col items-center;
-    @apply sm:flex-row;
-    @apply md:justify-start;
-  }
-
-  .hero-counseling {
-    @apply w-full h-14 rounded-md text-white mt-5 text-lg font-semibold bg-primary text-foreground;
-    @apply sm:ml-5;
-    @apply lg:w-40;
-  }
-
-  .hero-services {
-    @apply border-2 border-primary w-full h-14 rounded-md text-primary mt-5 font-semibold text-lg;
-    @apply lg:w-40;
-  }
-
-  .hero-svg {
-    @apply m-10 items-center;
-    @apply sm:flex sm:justify-center;
-    @apply lg:justify-end lg:w-1/2;
-  }
+	.baf:after {
+		content: '';
+		width: calc(100% + 12px);
+		height: calc(100% + 12px);
+		border: 1px solid #6841ea;
+		opacity: 0.3;
+		position: absolute;
+		right: -6px;
+		top: -6px;
+		border-radius: 5px;
+	}
+	.baf:before {
+		content: '';
+		width: calc(100% + 24px);
+		height: calc(100% + 24px);
+		border: 1px solid rgb(104, 65, 234);
+		opacity: 0.3;
+		position: absolute;
+		right: -12px;
+		top: -12px;
+		border-radius: 5px;
+	}
 }
 
 @layer utilities {
-  .number-project-main {
-    @apply flex flex-col-reverse justify-center;
-    @apply sm:flex-row-reverse;
-    @apply xl:justify-end;
-  }
-
-  .number-projects {
-    @apply flex flex-col justify-center w-52 rounded-md ml-2 text-primary;
-    @apply sm:justify-center sm:items-center;
-  }
-
-  .numbers {
-    @apply font-bold text-base;
-  }
-
-  .number-text {
-    @apply font-bold text-lg;
-  }
-}
-
-@layer utilities {
-  .services-main {
-    @apply flex flex-col-reverse w-full px-5;
-    @apply md:container md:mx-auto;
-  }
-  .services {
-    @apply my-28 flex flex-col;
-  }
-
-  .services-top {
-    @apply flex flex-col-reverse justify-between items-center bg-white py-10 my-10 rounded-lg;
-    @apply lg:flex-row;
-  }
-
-  .services-top-item {
-    @apply relative;
-    @apply lg:bottom-10;
-  }
-
-  .services-text {
-    @apply flex items-center font-extrabold text-2xl text-primary-foreground;
-  }
-
-  .services-title {
-    @apply text-gray-600 mt-5 leading-8;
-  }
-
-  .services-bottom {
-    @apply text-[#4a4b4b] grid grid-cols-1 place-items-center gap-8 mb-16;
-    @apply md:grid-cols-2;
-    @apply lg:grid-cols-3;
-  }
-  .hovered {
-    color: white;
-    background: linear-gradient(220.55deg, #6c638f 0%, #6c63ff 100%);
-  }
-  .services-bottom-item {
-    @apply hover:hovered flex flex-col justify-center  w-full h-52 rounded-xl bg-white;
-  }
-
-  .services-bottom-name {
-    @apply flex items-center font-bold text-xl mx-5;
-  }
-
-  .services-span {
-    @apply pr-3;
-  }
-
-  .services-bottom-title {
-    @apply text-sm m-5 leading-8;
-  }
+	.hovered {
+		color: white;
+		background: linear-gradient(220.55deg, #6c638f 0%, #6c63ff 100%);
+	}
 }

@@ -1,13 +1,13 @@
 interface iDataHeader {
-  [key: string]: string
+	[key: string]: string;
 }
 
-let dataDesctopMenu = {
-  name: 'افراز تیم',
-  mainPage: 'صفحه اصلی',
-  projects: 'پروژه ها',
-  weblog: 'وبلاگ',
-  about: 'درباره ما',
-} satisfies iDataHeader
+const dataDesctopMenu = {
+	name: 'افراز تیم',
+	mainPage: 'صفحه اصلی',
+	projects: 'پروژه ها',
+	weblog: 'وبلاگ',
+	about: 'درباره ما',
+} satisfies iDataHeader;
 
-export { dataDesctopMenu }
+export { dataDesctopMenu };
