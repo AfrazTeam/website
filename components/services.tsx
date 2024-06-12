@@ -24,7 +24,7 @@ const Services = () => {
 						<Image src="/images/team2.png" width={500} height={100} alt="ss" />
 					</div>
 				</div>
-				<div className="mb-16 grid grid-cols-1 gap-8 text-[#4a4b4b] sm:grid-cols-2 ">
+				<div className="mb-16 grid grid-cols-1 gap-14 text-[#4a4b4b] sm:grid-cols-2 ">
 					<div className="hover:hovered flex h-auto w-full  flex-col rounded-xl bg-white py-8 shadow">
 						<div className="mx-5 mb-4 flex items-center text-xl font-bold">
 							<Image src="svgs/svg6.svg" width={40} height={30} alt="svg1" />
