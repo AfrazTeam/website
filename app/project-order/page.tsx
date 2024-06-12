@@ -79,7 +79,7 @@ export default function ProjectOrder() {
 					<div className="-mx-3 mb-6 flex flex-wrap">
 						<div className="w-full px-3">
 							<button
-								className="mb-3 block w-full appearance-none rounded border border-gray-200 bg-primary px-4 py-3 leading-tight text-gray-700 focus:border-gray-500 focus:bg-white focus:outline-none"
+								className="mb-3 block w-full appearance-none rounded border border-gray-200 bg-primary px-4 py-3 leading-tight text-white focus:border-gray-500 focus:bg-white focus:outline-none"
 								type="submit"
 							>
 								ثبت درخواست
