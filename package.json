@@ -33,7 +33,8 @@
 		"lucide-react": "^0.379.0",
 		"next": "13.4.7",
 		"react": "18.2.0",
-		"react-dom": "18.2.0"
+		"react-dom": "18.2.0",
+		"react-icons": "^5.2.1"
 	},
 	"devDependencies": {
 		"@eslint/create-config": "^0.4.6",
