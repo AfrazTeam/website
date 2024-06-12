@@ -2,10 +2,29 @@
 import { dataDesctopMenu } from '@/data/header';
 import { dataTextGeneral } from '@/data/text';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
+import Image from 'next/image';
 
 const Header = () => {
 	const [scrolled, setScrolled] = useState(false);
+
+	const [activeMenu, setActiveMenu] = useState('/');
+	const pathname = usePathname();
+
+	useEffect(() => {
+		if (pathname === '/') {
+			setActiveMenu('/');
+		} else if (pathname?.startsWith('/projects')) {
+			setActiveMenu('/projects');
+		} else if (pathname?.startsWith('/weblog')) {
+			setActiveMenu('/weblog');
+		} else if (pathname?.startsWith('/about')) {
+			setActiveMenu('/about');
+		}
+	}, [pathname]);
+
+	console.table(pathname);
 	useEffect(() => {
 		const handleScroll = () => {
 			if (window.scrollY > 20) {
@@ -25,30 +44,42 @@ const Header = () => {
 	}`;
 
 	return (
-		<header className={`fixed top-0 z-50 flex h-16 w-full`}>
+		<header className={`fixed top-0 z-50 flex h-24  w-full`}>
 			<div className={containerClass}>
-				<div className="flex-1">
-					<Link href="/" className="block w-28 text-2xl font-extrabold">
-						{dataDesctopMenu.name}
-					</Link>
-				</div>
-				<div className="hidden w-[inherit] items-center sm:hidden lg:flex">
+				<Link href="/">
+					<Image
+						src="/images/AfrazTeam.png"
+						width={150}
+						height={70}
+						alt="Logo"
+					/>
+				</Link>
+				<div className="ms-10 hidden w-[inherit] items-center sm:hidden lg:flex">
 					{/* TODO update this menu to nav ul menu and fix border */}
 					<div className="">
 						<Link
 							href="/"
-							className="block rounded-lg bg-slate-200/80 px-4 py-2 text-center font-normal"
+							className={`block rounded-lg px-4 py-2 text-center font-normal ${activeMenu === '/' ? 'bg-slate-200/80' : ''}`}
 						>
 							{dataDesctopMenu.mainPage}
 						</Link>
 					</div>
-					<Link href="/" className="block px-4 py-2 text-center font-normal">
+					<Link
+						href="/projects"
+						className={`block rounded-lg px-4 py-2 text-center font-normal ${activeMenu === '/projects' ? 'bg-slate-200/80' : ''}`}
+					>
 						{dataDesctopMenu.projects}
 					</Link>
-					<Link href="/" className="block px-4 py-2 text-center font-normal">
+					<Link
+						href="/weblog"
+						className={`block rounded-lg px-4 py-2 text-center font-normal ${activeMenu === '/weblog' ? 'bg-slate-200/80' : ''}`}
+					>
 						{dataDesctopMenu.weblog}
 					</Link>
-					<Link href="/" className="block px-4 py-2 text-center font-normal">
+					<Link
+						href="/about"
+						className={`block rounded-lg px-4 py-2 text-center font-normal ${activeMenu === '/about' ? 'bg-slate-200/80' : ''}`}
+					>
 						{dataDesctopMenu.about}
 					</Link>
 				</div>
